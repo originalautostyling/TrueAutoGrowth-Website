@@ -1,30 +1,49 @@
 // TRUE AUTO GROWTH — Shared JS
 
-// Nav scroll
+// Nav scroll effect
 window.addEventListener('scroll', () => {
   document.getElementById('nav')?.classList.toggle('scrolled', window.scrollY > 40);
 });
 
-// Mobile menu
-function toggleMenu() { document.getElementById('mobileMenu')?.classList.toggle('open'); }
-function closeMenu() { document.getElementById('mobileMenu')?.classList.remove('open'); }
+// Hamburger + mobile menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+function toggleMenu() {
+  const open = mobileMenu?.classList.toggle('open');
+  hamburger?.classList.toggle('open', open);
+  // lock body scroll when menu open
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+function closeMenu() {
+  mobileMenu?.classList.remove('open');
+  hamburger?.classList.remove('open');
+  document.body.style.overflow = '';
+}
+window.toggleMenu = toggleMenu;
+window.closeMenu = closeMenu;
+
+// Close menu on outside click
+document.addEventListener('click', e => {
+  if (mobileMenu?.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburger?.contains(e.target)) closeMenu();
+});
 
 // Active nav link
 (function () {
-  const path = window.location.pathname.replace(/\.html$/, '');
-  document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
-    const href = (a.getAttribute('href') || '').replace(/\.html$/, '');
-    if (href && href !== '/' && path.includes(href.replace(/^\//, ''))) a.classList.add('active');
-    if ((href === '/' || href === '/index') && (path === '/' || path === '/index' || path === '')) a.classList.add('active');
+  const path = window.location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    const href = (a.getAttribute('href') || '').replace(/\.html$/, '').replace(/\/$/, '') || '/';
+    if (href !== '/' && path.startsWith(href)) a.classList.add('active');
+    if (href === '/' && path === '/') a.classList.add('active');
   });
 })();
 
 // Scroll reveal
-const obs = new IntersectionObserver(
-  es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+const revealObs = new IntersectionObserver(
+  entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
   { threshold: 0.07 }
 );
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
 // FAQ accordion
 document.querySelectorAll('.faq-item').forEach(item => {
@@ -35,22 +54,24 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
-// Smooth scroll
+// Smooth scroll with nav offset
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const id = a.getAttribute('href');
-    const t = document.querySelector(id);
-    if (t && id !== '#') {
+    if (id === '#') return;
+    const target = document.querySelector(id);
+    if (target) {
       e.preventDefault();
-      window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' });
+      const top = target.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top, behavior: 'smooth' });
       closeMenu();
     }
   });
 });
 
-// Form submit
+// Form submit handler
 window.handleSubmit = function(btn) {
-  btn.innerHTML = '&#10003;&nbsp; Submitted — We\'ll be in touch shortly.';
+  btn.innerHTML = '&#10003;&nbsp; Submitted. We will be in touch shortly.';
   btn.style.background = '#0f7a3e';
   btn.disabled = true;
 };

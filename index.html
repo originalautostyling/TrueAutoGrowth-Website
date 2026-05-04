@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>True Auto Growth | Marketing for PPF, Tint, Ceramic & Detailing Shops</title>
-  <meta name="description" content="True Auto Growth helps PPF, window tint, vinyl wrap, ceramic coating, and detailing businesses build the foundation, visibility, tracking, and follow-up needed to turn attention into booked work. Industry-rooted. Nationwide."/>
-  <meta name="keywords" content="PPF shop marketing, window tint marketing, ceramic coating marketing, vinyl wrap shop marketing, auto detailing marketing, detailing business growth, Google Ads PPF, SEO ceramic coating shop, automotive restyling marketing"/>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>True Auto Growth | Marketing for PPF, Tint, Ceramic Coating & Detailing Shops</title>
+  <meta name="description" content="True Auto Growth builds marketing infrastructure for PPF, window tint, ceramic coating, vinyl wrap, and detailing businesses across the United States. Industry-rooted strategy. One shop per market."/>
+  <meta name="keywords" content="PPF shop marketing, window tint marketing, ceramic coating marketing, vinyl wrap marketing, auto detailing marketing, detailing business growth, Google Ads PPF installer, SEO ceramic coating"/>
   <link rel="canonical" href="https://trueautogrowth.com/"/>
-  <meta property="og:title" content="True Auto Growth | Marketing for PPF, Tint, Ceramic & Detailing Shops"/>
-  <meta property="og:description" content="Growth systems for automotive shops ready to become the obvious choice in their market."/>
+  <meta property="og:title" content="True Auto Growth | Marketing for Automotive Shops"/>
+  <meta property="og:description" content="Growth infrastructure for PPF, tint, ceramic, wrap, and detailing businesses ready to become the obvious choice in their market."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://trueautogrowth.com/"/>
   <meta property="og:image" content="https://trueautogrowth.com/images/tag-hero.png"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="robots" content="index, follow"/>
-  <script type="application/ld+json">{
-    "@context":"https://schema.org",
-    "@graph":[
-      {"@type":"Organization","@id":"https://trueautogrowth.com/#organization","name":"True Auto Growth","url":"https://trueautogrowth.com","logo":"https://trueautogrowth.com/images/tag-logo-white.png","description":"Growth systems for PPF, window tint, ceramic coating, vinyl wrap, and auto detailing businesses across the United States.","areaServed":"United States"},
-      {"@type":"WebSite","@id":"https://trueautogrowth.com/#website","url":"https://trueautogrowth.com","name":"True Auto Growth","publisher":{"@id":"https://trueautogrowth.com/#organization"}},
-      {"@type":"FAQPage","mainEntity":[
-        {"@type":"Question","name":"Do you work with shops nationwide?","acceptedAnswer":{"@type":"Answer","text":"Yes. True Auto Growth works with qualifying shops across the United States."}},
-        {"@type":"Question","name":"Do you work with more than one shop in the same area?","acceptedAnswer":{"@type":"Answer","text":"No. We only partner with one qualifying shop per protected 50-mile service area."}},
-        {"@type":"Question","name":"Is ad spend included in pricing?","acceptedAnswer":{"@type":"Answer","text":"No. Ad spend is separate and paid directly to the platforms. Our pricing covers strategy, management, and implementation."}},
-        {"@type":"Question","name":"How is pricing determined?","acceptedAnswer":{"@type":"Answer","text":"Pricing is based on scope of work. We do not force every shop into the same plan."}}
-      ]}
-    ]
-  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://trueautogrowth.com/#org","name":"True Auto Growth","url":"https://trueautogrowth.com","logo":"https://trueautogrowth.com/images/tag-logo.svg","description":"Marketing infrastructure for PPF, window tint, ceramic coating, vinyl wrap, and auto detailing businesses.","areaServed":"United States"},{"@type":"WebSite","url":"https://trueautogrowth.com","name":"True Auto Growth","publisher":{"@id":"https://trueautogrowth.com/#org"}}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
@@ -35,14 +22,16 @@
 <body>
 
 <nav id="nav">
-  <a href="/" class="nav-logo"><img src="/images/tag-logo-white.png" alt="True Auto Growth"/></a>
+  <a href="/" class="nav-logo">
+    <img src="/images/tag-logo.svg" alt="True Auto Growth" width="180" height="45"/>
+  </a>
   <ul class="nav-links">
     <li class="nav-dropdown">
-      <a href="/services.html">Services</a>
+      <a href="/services.html">Packages</a>
       <div class="nav-dropdown-menu">
-        <a href="/services.html#foundation">Foundation</a>
-        <a href="/services.html#market-leader">Market Leader</a>
-        <a href="/services.html#dominator">Local Dominator</a>
+        <a href="/packages/foundation.html">Foundation</a>
+        <a href="/packages/market-leader.html">Market Leader</a>
+        <a href="/packages/local-dominator.html">Local Dominator</a>
       </div>
     </li>
     <li><a href="/industries.html">Industries</a></li>
@@ -50,13 +39,15 @@
     <li><a href="/faq.html">FAQ</a></li>
     <li><a href="/contact.html" class="nav-cta">Check Market Availability</a></li>
   </ul>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="/services.html" onclick="closeMenu()">Services</a>
-  <a href="/services.html#foundation" class="msub" onclick="closeMenu()">Foundation</a>
-  <a href="/services.html#market-leader" class="msub" onclick="closeMenu()">Market Leader</a>
-  <a href="/services.html#dominator" class="msub" onclick="closeMenu()">Local Dominator</a>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+  <a href="/services.html" onclick="closeMenu()">Packages</a>
+  <a href="/packages/foundation.html" class="msub" onclick="closeMenu()">Foundation</a>
+  <a href="/packages/market-leader.html" class="msub" onclick="closeMenu()">Market Leader</a>
+  <a href="/packages/local-dominator.html" class="msub" onclick="closeMenu()">Local Dominator</a>
   <a href="/industries.html" onclick="closeMenu()">Industries</a>
   <a href="/about.html" onclick="closeMenu()">About</a>
   <a href="/faq.html" onclick="closeMenu()">FAQ</a>
@@ -67,8 +58,8 @@
   <div class="hero-bg" style="background-image:url('/images/tag-hero.png');"></div>
   <div class="hero-inner">
     <div class="hero-tag">PPF · Tint · Ceramic · Wrap · Detailing</div>
-    <h1>Growth systems for shops<br/>ready to become the<br/><span>obvious choice</span><br/>in their market.</h1>
-    <p class="hero-sub">True Auto Growth helps PPF, window tint, vinyl wrap, ceramic coating, and detailing businesses build the foundation, visibility, tracking, and follow-up needed to turn attention into booked work.<br/><br/>We are not outsiders selling generic marketing. We are rooted in the industry — with ownership connected directly to the automotive restyling world.</p>
+    <h1>Built for shops ready to become<br/>the <span>obvious choice</span><br/>in their market.</h1>
+    <p class="hero-sub">True Auto Growth helps PPF, window tint, vinyl wrap, ceramic coating, and detailing businesses build the foundation, visibility, tracking, and follow-up needed to turn attention into booked work. We are not outsiders. We are rooted in this industry.</p>
     <div class="hero-actions">
       <a href="/contact.html" class="btn">Check Market Availability</a>
       <a href="/services.html" class="btn-outline">See What We Build</a>
@@ -83,22 +74,22 @@
     <div class="m-item"><div class="m-dot"></div>Window Tint Growth</div>
     <div class="m-item"><div class="m-dot"></div>Ceramic Coating SEO</div>
     <div class="m-item"><div class="m-dot"></div>Google Ads for Detailers</div>
-    <div class="m-item"><div class="m-dot"></div>Lead Tracking & Follow-Up</div>
+    <div class="m-item"><div class="m-dot"></div>Lead Tracking and Follow-Up</div>
     <div class="m-item"><div class="m-dot"></div>Protected Market Exclusivity</div>
     <div class="m-item"><div class="m-dot"></div>Vinyl Wrap Marketing</div>
     <div class="m-item"><div class="m-dot"></div>Google Business Profile</div>
-    <div class="m-item"><div class="m-dot"></div>Conversion Tracking</div>
-    <div class="m-item"><div class="m-dot"></div>Meta Ads for Auto Shops</div>
+    <div class="m-item"><div class="m-dot"></div>CRM Setup and Management</div>
+    <div class="m-item"><div class="m-dot"></div>Offer Optimization</div>
     <div class="m-item"><div class="m-dot"></div>PPF Shop Marketing</div>
     <div class="m-item"><div class="m-dot"></div>Window Tint Growth</div>
     <div class="m-item"><div class="m-dot"></div>Ceramic Coating SEO</div>
     <div class="m-item"><div class="m-dot"></div>Google Ads for Detailers</div>
-    <div class="m-item"><div class="m-dot"></div>Lead Tracking & Follow-Up</div>
+    <div class="m-item"><div class="m-dot"></div>Lead Tracking and Follow-Up</div>
     <div class="m-item"><div class="m-dot"></div>Protected Market Exclusivity</div>
     <div class="m-item"><div class="m-dot"></div>Vinyl Wrap Marketing</div>
     <div class="m-item"><div class="m-dot"></div>Google Business Profile</div>
-    <div class="m-item"><div class="m-dot"></div>Conversion Tracking</div>
-    <div class="m-item"><div class="m-dot"></div>Meta Ads for Auto Shops</div>
+    <div class="m-item"><div class="m-dot"></div>CRM Setup and Management</div>
+    <div class="m-item"><div class="m-dot"></div>Offer Optimization</div>
   </div>
 </div>
 
@@ -107,21 +98,21 @@
     <div class="grid-2 reveal">
       <div>
         <div class="s-label">Who We Are</div>
-        <h2 class="s-title" style="margin-bottom:20px;">We are not outsiders selling generic marketing.</h2>
-        <p class="s-body" style="margin-bottom:16px;">We are rooted in the industry. One of our owners is connected directly to the automotive restyling world — which means we understand the services, the customer, the shop, and what it actually takes to grow.</p>
-        <p class="s-body" style="margin-bottom:16px;">Building a marketing infrastructure for a PPF shop is not the same as building one for a restaurant or a law firm. The buyer is different. The trust threshold is different. The sales cycle is different. The objections are different. We know this firsthand.</p>
-        <p class="s-body">We build the foundation, visibility, tracking, and follow-up that helps serious shops turn more attention into booked work.</p>
+        <h2 class="s-title" style="margin-bottom:20px;">We are not just another agency.</h2>
+        <p class="s-body" style="margin-bottom:16px;">We are rooted in this industry. One of our owners is directly connected to the automotive restyling world with over 10 years of hands-on experience. We understand the services, the customers, the shop operations, and what it actually takes to grow a premium automotive business.</p>
+        <p class="s-body" style="margin-bottom:16px;">That is not a marketing angle. It changes every decision we make. The strategy, the messaging, the offer structure, the targeting, the follow-up language. We know what a high-quality install looks like, we know how protective film buyers think, and we know what separates the shops that scale from the ones that stay flat.</p>
+        <p class="s-body">We build the foundation, visibility, tracking, and follow-up that serious shops need to consistently attract the right customer and turn more of that attention into booked work.</p>
         <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
           <a href="/about.html" class="btn">Our Story</a>
           <a href="/services.html" class="btn-outline">What We Build</a>
         </div>
       </div>
       <div>
-        <div class="pain-item"><div class="pain-num">01</div><div class="pain-text"><strong>Word of mouth has a ceiling</strong><p>It built your shop. It cannot scale it. When referrals slow, revenue slows. A real structure fills that gap with consistent, predictable demand.</p></div></div>
-        <div class="pain-item"><div class="pain-num">02</div><div class="pain-text"><strong>Random content does not convert</strong><p>Posting before/afters is good for awareness. Without the right infrastructure behind it, content rarely turns into booked jobs consistently.</p></div></div>
-        <div class="pain-item"><div class="pain-num">03</div><div class="pain-text"><strong>Ads without a system behind them leak money</strong><p>Running ads to a weak landing page with no tracking and no follow-up is expensive and frustrating. Most shops never know what is actually producing revenue.</p></div></div>
-        <div class="pain-item"><div class="pain-num">04</div><div class="pain-text"><strong>High-ticket buyers rarely book on first contact</strong><p>A PPF or ceramic inquiry that does not get structured follow-up usually goes cold. The shops closing those jobs are the ones with a process behind their leads.</p></div></div>
-        <div class="pain-item"><div class="pain-num">05</div><div class="pain-text"><strong>Generic agencies do not know this industry</strong><p>An agency that has never priced a full wrap or understood PPF buyer objections cannot build the right message for your shop.</p></div></div>
+        <div class="pain-item"><div class="pain-num">01</div><div class="pain-text"><strong>Word of mouth has a ceiling</strong><p>It built your shop. It will not scale it. When referrals slow down, so does everything else. Real structure creates demand that does not depend on who happened to mention your name this week.</p></div></div>
+        <div class="pain-item"><div class="pain-num">02</div><div class="pain-text"><strong>Content alone does not fill the calendar</strong><p>Posting before and afters is good for brand awareness. Without the right infrastructure behind it, it rarely turns into booked jobs at any consistent rate.</p></div></div>
+        <div class="pain-item"><div class="pain-num">03</div><div class="pain-text"><strong>Ads without a system burn through budget</strong><p>Running paid ads to a weak landing page with no tracking and no follow-up is expensive and frustrating. Most shops have no idea which spend is actually producing revenue.</p></div></div>
+        <div class="pain-item"><div class="pain-num">04</div><div class="pain-text"><strong>High-ticket leads go cold without follow-up</strong><p>A PPF or ceramic inquiry that does not get a structured response within hours is probably gone. The shops closing those jobs are the ones with a process behind their leads.</p></div></div>
+        <div class="pain-item"><div class="pain-num">05</div><div class="pain-text"><strong>Generalist agencies do not understand this industry</strong><p>An agency that has never priced a full protective film install cannot build the right message for your shop. We can.</p></div></div>
       </div>
     </div>
   </div>
@@ -134,15 +125,12 @@
       <h2 class="s-title">One industry. Built for five.</h2>
     </div>
     <div class="grid-3 reveal">
-      <a href="/industries/ppf.html" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>PPF Shops</h3><p>High-ticket, high-consideration. We build the trust infrastructure and demand that moves buyers from researching to committed.</p><span class="tag">PPF Marketing →</span></a>
-      <a href="/industries/window-tint.html" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Window Tint Shops</h3><p>Competitive market with high local volume. We help tint shops own their search results and run paid campaigns that produce quality leads.</p><span class="tag">Tint Marketing →</span></a>
-      <a href="/industries/ceramic-coating.html" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 2.5 2.5L16 9"/></svg></div><h3>Ceramic Coating Studios</h3><p>Educated buyers who research before they commit. We build the positioning that puts serious shops ahead during that research phase.</p><span class="tag">Ceramic Marketing →</span></a>
-      <a href="/industries/vinyl-wrap.html" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 2 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3>Vinyl Wrap Studios</h3><p>We attract the buyer who values quality and is ready to invest — not the one shopping for the cheapest square foot.</p><span class="tag">Wrap Marketing →</span></a>
-      <a href="/industries/detailing.html" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/></svg></div><h3>Auto Detailing Businesses</h3><p>We help detailing businesses build the structure that brings in consistent, quality clients — not just whoever calls first.</p><span class="tag">Detailing Marketing →</span></a>
-      <div class="card" style="background:linear-gradient(135deg,var(--bg3),rgba(14,68,252,0.07));border-color:var(--blue-bd);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:14px;">
-        <p style="color:var(--t50);font-size:14px;line-height:1.7;">Not sure if your market is open? One conversation answers that.</p>
-        <a href="/contact.html" class="btn btn-sm">Check Availability</a>
-      </div>
+      <a href="/industries.html#ppf" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>PPF Shops</h3><p>High-ticket, high-consideration. We build the trust infrastructure that moves buyers from researching to booked, specifically in your market.</p><span class="tag">PPF Marketing</span></a>
+      <a href="/industries.html#tint" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Window Tint Shops</h3><p>Competitive market with strong local demand. We help tint shops dominate their local search results and run paid campaigns that produce leads worth calling back.</p><span class="tag">Tint Marketing</span></a>
+      <a href="/industries.html#ceramic" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 2.5 2.5L16 9"/></svg></div><h3>Ceramic Coating Studios</h3><p>Educated buyers who research before committing. We build the positioning and SEO presence that puts serious studios ahead of everyone else in that research window.</p><span class="tag">Ceramic Marketing</span></a>
+      <a href="/industries.html#wrap" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 2 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3>Vinyl Wrap Studios</h3><p>We attract the buyer who values craftsmanship and is ready to invest in it rather than the one shopping for the cheapest price per square foot.</p><span class="tag">Wrap Marketing</span></a>
+      <a href="/industries.html#detailing" class="card card-link"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/></svg></div><h3>Auto Detailing Businesses</h3><p>From mobile operators to multi-bay studios, we help detailing businesses build the infrastructure that produces consistent, quality clients month after month.</p><span class="tag">Detailing Marketing</span></a>
+      <div class="card" style="background:linear-gradient(135deg,var(--bg3),rgba(14,68,252,0.07));border-color:var(--blue-bd);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:14px;"><p style="color:var(--t50);font-size:14px;line-height:1.7;">Not sure if your market is open? One conversation settles that.</p><a href="/contact.html" class="btn btn-sm">Check Availability</a></div>
     </div>
   </div>
 </section>
@@ -150,94 +138,94 @@
 <section>
   <div class="container">
     <div class="section-heading reveal">
-      <div class="s-label">How We Work</div>
-      <h2 class="s-title" style="margin-bottom:18px;">We build the pieces that<br/>need to work together.</h2>
-      <p class="s-body" style="max-width:620px;">Foundation. Visibility. Tracking. Follow-up. When all of these are built right and connected, your shop stops relying on whoever happens to find you and starts consistently attracting the type of customer you actually want.</p>
+      <div class="s-label">How We Think About It</div>
+      <h2 class="s-title" style="margin-bottom:18px;">Four things that have to<br/>work together.</h2>
+      <p class="s-body" style="max-width:600px;">Foundation. Visibility. Tracking. Follow-up. When all four are built right and connected to each other, your shop stops depending on who happens to find you and starts consistently attracting the type of customer you actually want.</p>
     </div>
     <div class="grid-4 reveal">
-      <div class="process-step"><div class="process-num">01</div><h3>Build the Foundation</h3><p>Before putting more money into ads, the underlying pieces need to be solid. Tracking, GBP, landing pages, offer clarity, and lead flow — most shops skip these and it shows.</p></div>
-      <div class="process-step"><div class="process-num">02</div><h3>Build Visibility</h3><p>Paid search, paid social, and organic SEO working together. The right message, in front of the right buyer, at the right point in their decision.</p></div>
-      <div class="process-step"><div class="process-num">03</div><h3>Capture and Track</h3><p>Every lead should be tracked back to its source. We set up the infrastructure that tells you which channels and campaigns are producing real jobs.</p></div>
-      <div class="process-step"><div class="process-num">04</div><h3>Follow Up and Close</h3><p>High-ticket buyers rarely book on first contact. A structured follow-up process keeps your shop in front of interested leads until they are ready to move.</p></div>
+      <div class="process-step"><div class="process-num">01</div><h3>Foundation First</h3><p>Before putting more into ads, the underlying pieces need to be solid. Tracking, your offer, GBP, landing pages, CRM, and lead flow. Most shops skip these. It shows.</p></div>
+      <div class="process-step"><div class="process-num">02</div><h3>Visibility</h3><p>Paid search, paid social, and organic SEO working together. The right message in front of the right buyer at the right point in their decision process.</p></div>
+      <div class="process-step"><div class="process-num">03</div><h3>Real Tracking</h3><p>Every lead traced back to its source. We build the infrastructure that tells you which channels and pages are producing actual booked jobs rather than just traffic numbers.</p></div>
+      <div class="process-step"><div class="process-num">04</div><h3>Follow-Up That Closes</h3><p>High-ticket buyers rarely book on the first contact. A structured follow-up process keeps your shop in front of interested leads until they are ready to move forward.</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt" id="services">
+<section class="alt" id="packages">
   <div class="container">
     <div class="section-heading centered reveal">
-      <div class="s-label">What We Offer</div>
-      <h2 class="s-title">Three packages.<br/>Scoped to where your shop is.</h2>
+      <div class="s-label">Our Packages</div>
+      <h2 class="s-title">Three options. Scoped to where your shop is.</h2>
     </div>
-    <p class="reveal" style="color:var(--t70);font-size:clamp(14px,1.4vw,16px);max-width:580px;margin:0 auto clamp(40px,6vw,64px);text-align:center;line-height:1.8;">Pricing is based on scope of work. We do not force every shop into the same plan.</p>
+    <p class="reveal" style="color:var(--t70);font-size:clamp(14px,1.4vw,16px);max-width:580px;margin:0 auto clamp(40px,6vw,64px);text-align:center;line-height:1.8;">Every engagement is month to month. Pricing is based on scope of work. We do not lock you into a plan that does not fit your shop.</p>
     <div class="grid-3 reveal">
-
       <div class="pkg-card">
         <div class="pkg-tier">Package 01</div>
         <div class="pkg-name">Foundation</div>
-        <div class="pkg-desc">For shops doing good work that need a better structure behind the business to turn more interest into booked jobs.</div>
+        <div class="pkg-desc">For shops doing quality work that need a stronger structure behind the business to turn more interest into booked jobs.</div>
+        <div class="pkg-price-range">$1,500 &ndash; $2,500</div>
+        <div class="pkg-mo">per month &middot; month to month</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-list">
           <li>Google Business Profile optimization</li>
           <li>Website or landing page improvements</li>
           <li>Lead form and call tracking setup</li>
+          <li>CRM setup and implementation</li>
+          <li>Offer optimization and service clarity</li>
           <li>Review growth strategy</li>
           <li>Local SEO cleanup</li>
           <li>Follow-up process improvements</li>
           <li>Content direction</li>
         </ul>
         <div style="margin-top:auto;padding-top:20px;border-top:1px solid var(--border);">
-          <p style="font-size:11px;color:var(--t30);margin-bottom:14px;line-height:1.6;">Pricing based on scope of work.</p>
-          <a href="/contact.html" class="btn btn-full btn-outline">Check Market Availability</a>
+          <a href="/packages/foundation.html" class="btn btn-full btn-outline" style="margin-bottom:10px;">See Full Details</a>
+          <a href="/contact.html" class="btn btn-full">Check Market Availability</a>
         </div>
       </div>
-
       <div class="pkg-card featured">
         <div class="pkg-tier">Package 02</div>
         <div class="pkg-name">Market Leader</div>
-        <div class="pkg-desc">For established shops that want to become one of the first names people think of in their city — with ads, SEO, and follow-up all working together.</div>
+        <div class="pkg-desc">For established shops that want to become one of the first names people think of when they need PPF, tint, ceramic, or a wrap in their city.</div>
+        <div class="pkg-price-range">$3,000 &ndash; $5,000</div>
+        <div class="pkg-mo">per month &middot; ad spend is separate</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-list">
+          <li>Everything in Foundation</li>
           <li>Google Ads strategy and management</li>
           <li>Meta Ads strategy and management</li>
           <li>Landing page strategy</li>
           <li>Local SEO and GBP growth</li>
           <li>Content strategy</li>
-          <li>Lead tracking and conversion setup</li>
-          <li>Follow-up improvements</li>
+          <li>CRM and follow-up improvements</li>
           <li>Monthly reporting and direction</li>
         </ul>
         <div style="margin-top:auto;padding-top:20px;border-top:1px solid var(--border);">
-          <p style="font-size:11px;color:var(--t30);margin-bottom:14px;line-height:1.6;">Pricing based on scope of work. Ad spend is separate.</p>
+          <a href="/packages/market-leader.html" class="btn btn-full btn-outline" style="margin-bottom:10px;">See Full Details</a>
           <a href="/contact.html" class="btn btn-full">Check Market Availability</a>
         </div>
       </div>
-
       <div class="pkg-card">
         <div class="pkg-tier">Package 03</div>
         <div class="pkg-name">Local Dominator</div>
-        <div class="pkg-desc">For premium shops serious about becoming the trusted name in their area — with full visibility, positioning, lead flow, and content working at scale.</div>
+        <div class="pkg-desc">For premium shops that want to own their market and clearly separate themselves from everyone else doing similar work nearby.</div>
+        <div class="pkg-price-range">$6,000<span style="font-size:18px;font-weight:600;">+</span></div>
+        <div class="pkg-mo">per month &middot; ad spend is separate</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-list">
-          <li>Full strategy and market positioning</li>
-          <li>Google Ads and Meta Ads</li>
-          <li>SEO and local authority building</li>
-          <li>Landing page and conversion improvements</li>
-          <li>Content direction for trust and authority</li>
-          <li>Lead tracking and reporting</li>
-          <li>Follow-up and sales process support</li>
+          <li>Everything in Market Leader</li>
+          <li>Full strategy and competitive positioning</li>
+          <li>Advanced SEO and local authority building</li>
+          <li>Multi-channel paid acquisition</li>
+          <li>Funnel and CRM optimization</li>
+          <li>Content for trust and authority</li>
           <li>Review strategy</li>
-          <li>Ongoing optimization</li>
+          <li>Ongoing optimization and scaling direction</li>
         </ul>
         <div style="margin-top:auto;padding-top:20px;border-top:1px solid var(--border);">
-          <p style="font-size:11px;color:var(--t30);margin-bottom:14px;line-height:1.6;">Pricing based on scope of work. Ad spend is separate.</p>
-          <a href="/contact.html" class="btn btn-full btn-outline">Check Market Availability</a>
+          <a href="/packages/local-dominator.html" class="btn btn-full btn-outline" style="margin-bottom:10px;">See Full Details</a>
+          <a href="/contact.html" class="btn btn-full">Check Market Availability</a>
         </div>
       </div>
-
-    </div>
-    <div style="text-align:center;margin-top:28px;" class="reveal">
-      <a href="/services.html" style="font-size:13px;color:var(--blue);text-decoration:none;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">See Full Package Details →</a>
     </div>
   </div>
 </section>
@@ -246,8 +234,8 @@
   <div class="container reveal">
     <div class="excl-banner">
       <div class="s-label" style="justify-content:center;margin-bottom:14px;">Protected Market Exclusivity</div>
-      <h2>We do not work with competing shops<br/>in the same protected market.</h2>
-      <p>To protect our clients and avoid competing against our own strategy, we only partner with one qualifying shop per protected 50-mile service area. Once a market is claimed, it is not available to a competing shop until the partnership ends.</p>
+      <h2>We do not work with competing shops in the same protected market.</h2>
+      <p>To protect our clients and avoid competing against our own strategy, we only partner with one qualifying shop per protected 50-mile service area. Once a market is claimed, it stays closed to competing shops for the life of the partnership.</p>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
         <a href="/contact.html" class="btn">Check Market Availability</a>
         <a href="/faq.html" class="btn-outline">How It Works</a>
@@ -260,20 +248,21 @@
   <div class="container">
     <div class="grid-2 reveal">
       <div class="proof-img">
-        <img src="/images/tag-hero.png" alt="True Auto Growth — connected directly to the automotive restyling and detailing industry"/>
+        <img src="/images/tag-hero.png" alt="True Auto Growth founder detailing a Ferrari at a premium automotive studio"/>
         <div class="proof-accent"></div>
       </div>
       <div>
         <div class="s-label">Why True Auto Growth</div>
-        <h2 class="s-title" style="margin-bottom:20px;">Rooted in the industry.<br/>Not just familiar with it.</h2>
-        <p class="s-body" style="margin-bottom:14px;">One of our owners is directly connected to the automotive restyling and detailing world. That changes the quality of every decision we make — the strategy, the messaging, the offer structure, the targeting, and the follow-up.</p>
-        <p class="s-body" style="margin-bottom:14px;">We understand the services. We understand the customer. We understand the shop. We know what a high-quality install looks like and how to speak to the buyer who cares about it. A generic agency cannot replicate that.</p>
+        <h2 class="s-title" style="margin-bottom:20px;">Rooted in the industry. Not just familiar with it.</h2>
+        <p class="s-body" style="margin-bottom:14px;">One of our owners has spent over 10 years in the automotive restyling and detailing world. That is not a detail we mention for credibility points. It changes the quality of every decision we make for your shop.</p>
+        <p class="s-body" style="margin-bottom:14px;">We have priced full protective film wraps. We know the difference between a partial front and a track pack. We understand why a ceramic coating buyer asks about scratch resistance and what that tells you about where they are in the buying process. We know what a slow booking week feels like and what it costs when leads fall through.</p>
+        <p class="s-body">That context is the difference between a strategy that actually fits your business and one that was copied from a template built for a completely different industry.</p>
         <ul class="proof-pts">
-          <li>Industry-rooted strategy — not outsider assumptions</li>
-          <li>One market partner only — your positioning stays protected</li>
-          <li>Full infrastructure: foundation, visibility, and follow-up</li>
-          <li>Clear attribution — you see what is actually producing work</li>
-          <li>Nationwide reach, market-specific execution</li>
+          <li>10 plus years in the automotive restyling and detailing industry</li>
+          <li>Strategy built around your services, your market, and your buyer</li>
+          <li>One market partner only so your positioning stays protected</li>
+          <li>Clear attribution so you know what is producing work</li>
+          <li>Month to month because we earn the relationship every month</li>
         </ul>
         <div style="margin-top:28px;"><a href="/about.html" class="btn">More About Us</a></div>
       </div>
@@ -288,15 +277,13 @@
       <h2 class="s-title">Common questions.</h2>
     </div>
     <div style="max-width:780px;" class="reveal">
-      <div class="faq-item"><div class="faq-q">Do you work with shops nationwide?</div><div class="faq-a">Yes. True Auto Growth works with qualifying shops across the United States. Geography is not a limitation — market availability is what determines whether we can take on a new client in your area.</div></div>
-      <div class="faq-item"><div class="faq-q">Do you work with more than one shop in the same area?</div><div class="faq-a">No. To protect our clients and avoid competing against our own strategy, we only partner with one qualifying shop per protected 50-mile service area. Once a market is taken, it is closed to competing shops until the partnership ends.</div></div>
-      <div class="faq-item"><div class="faq-q">Is ad spend included in pricing?</div><div class="faq-a">No. Ad spend for Google Ads and Meta Ads is paid directly to the advertising platforms — separate from our fee. Our pricing covers strategy, management, and implementation.</div></div>
-      <div class="faq-item"><div class="faq-q">How is pricing determined?</div><div class="faq-a">Pricing is based on scope of work — what is needed, what your current assets look like, and what your market requires. We do not force every shop into the same plan.</div></div>
-      <div class="faq-item"><div class="faq-q">What type of shops are a good fit?</div><div class="faq-a">PPF installers, window tint shops, ceramic coating studios, vinyl wrap businesses, and auto detailing operations — shops that do quality work and want to build a real structure behind the business.</div></div>
+      <div class="faq-item"><div class="faq-q">Do you work with shops nationwide?</div><div class="faq-a">Yes. We work with qualifying shops across the United States. Where you are located is not the limiting factor. Market availability is.</div></div>
+      <div class="faq-item"><div class="faq-q">Do you work with more than one shop in the same area?</div><div class="faq-a">No. To protect our clients and avoid competing against our own work, we only partner with one qualifying shop per protected 50-mile service area. Once a market is claimed it stays closed to competing shops for the life of the partnership.</div></div>
+      <div class="faq-item"><div class="faq-q">Are contracts long-term?</div><div class="faq-a">All agreements are month to month. The length of the engagement depends on the scope of work and what your shop needs. We do not lock you into multi-year contracts.</div></div>
+      <div class="faq-item"><div class="faq-q">Is ad spend included in pricing?</div><div class="faq-a">No. Ad spend for Google Ads and Meta Ads is paid directly to the platforms, separate from our fee. Our pricing covers strategy, management, and implementation. We help you determine the right budget on your intake call.</div></div>
+      <div class="faq-item"><div class="faq-q">What kind of shops are the right fit?</div><div class="faq-a">PPF installers, window tint shops, ceramic coating studios, vinyl wrap businesses, and auto detailing operations. Specifically shops that do quality work and are ready to build real infrastructure behind the business rather than run a few ads and hope something sticks.</div></div>
     </div>
-    <div style="margin-top:24px;" class="reveal">
-      <a href="/faq.html" style="font-size:13px;color:var(--blue);text-decoration:none;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">View All FAQs →</a>
-    </div>
+    <div style="margin-top:24px;" class="reveal"><a href="/faq.html" style="font-size:13px;color:var(--blue);text-decoration:none;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">All FAQs &rarr;</a></div>
   </div>
 </section>
 
@@ -305,7 +292,7 @@
   <div class="cta-inner">
     <div class="s-label" style="justify-content:center;margin-bottom:14px;">One shop per market</div>
     <h2>Check if your market<br/>is still <span>available.</span></h2>
-    <p>Markets are protected on a first-come basis. If you are serious about building real structure behind your shop, start here.</p>
+    <p>Markets fill on a first-come basis. If you are serious about building real infrastructure behind your shop, this is where you start.</p>
     <div class="cta-btns">
       <a href="/contact.html" class="btn">Check Market Availability</a>
       <a href="/services.html" class="btn-outline">See What We Build</a>
@@ -315,12 +302,39 @@
 
 <footer>
   <div class="footer-top container">
-    <div class="footer-brand"><img src="/images/tag-logo-white.png" alt="True Auto Growth"/><p>Marketing for PPF, tint, ceramic, wrap, and detailing businesses across the United States. Industry-rooted. One market partner at a time.</p></div>
-    <div class="footer-col"><h4>Packages</h4><a href="/services.html#foundation">Foundation</a><a href="/services.html#market-leader">Market Leader</a><a href="/services.html#dominator">Local Dominator</a></div>
-    <div class="footer-col"><h4>Industries</h4><a href="/industries/ppf.html">PPF Shops</a><a href="/industries/window-tint.html">Window Tint</a><a href="/industries/ceramic-coating.html">Ceramic Coating</a><a href="/industries/vinyl-wrap.html">Vinyl Wrap</a><a href="/industries/detailing.html">Auto Detailing</a></div>
-    <div class="footer-col"><h4>Company</h4><a href="/about.html">About</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a><a href="/contact.html" style="color:var(--blue);margin-top:6px;">Check Market Availability</a></div>
+    <div class="footer-brand">
+      <div class="logo-wrap"><img src="/images/tag-logo.svg" alt="True Auto Growth" width="160" height="40"/></div>
+      <p>Marketing infrastructure for PPF, tint, ceramic, wrap, and detailing businesses across the United States. Industry-rooted. One market partner at a time.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Packages</h4>
+      <a href="/packages/foundation.html">Foundation</a>
+      <a href="/packages/market-leader.html">Market Leader</a>
+      <a href="/packages/local-dominator.html">Local Dominator</a>
+    </div>
+    <div class="footer-col">
+      <h4>Industries</h4>
+      <a href="/industries.html#ppf">PPF Shops</a>
+      <a href="/industries.html#tint">Window Tint</a>
+      <a href="/industries.html#ceramic">Ceramic Coating</a>
+      <a href="/industries.html#wrap">Vinyl Wrap</a>
+      <a href="/industries.html#detailing">Auto Detailing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/contact.html" style="color:var(--blue);margin-top:6px;">Check Market Availability</a>
+    </div>
   </div>
-  <div class="footer-bottom container"><p class="footer-copy">&copy; 2025 True Auto Growth. All rights reserved.</p><div class="footer-legal"><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms</a></div></div>
+  <div class="footer-bottom container">
+    <p class="footer-copy">&copy; 2025 True Auto Growth. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </div>
+  </div>
 </footer>
 <script src="/js/main.js"></script>
 </body>

@@ -3,18 +3,15 @@
 <head>
   <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FAQ | True Auto Growth</title>
-  <meta name="description" content="Common questions about True Auto Growth — market exclusivity, how pricing works, what is included, what type of shops are a fit, and how to get started."/>
+  <meta name="description" content="Answers to common questions about True Auto Growth. Market exclusivity, pricing, what is included, contracts, and how the intake process works."/>
   <link rel="canonical" href="https://trueautogrowth.com/faq.html"/>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"Do you work with shops nationwide?","acceptedAnswer":{"@type":"Answer","text":"Yes. True Auto Growth works with qualifying shops across the United States."}},
-    {"@type":"Question","name":"Do you work with more than one shop in the same area?","acceptedAnswer":{"@type":"Answer","text":"No. To protect our clients, we only partner with one qualifying shop per protected 50-mile service area."}},
-    {"@type":"Question","name":"What does market exclusivity mean?","acceptedAnswer":{"@type":"Answer","text":"Once we partner with a shop in a market, we will not take on a competing shop offering the same services in that protected 50-mile area."}},
-    {"@type":"Question","name":"Is ad spend included in pricing?","acceptedAnswer":{"@type":"Answer","text":"No. Ad spend for Google Ads and Meta Ads is paid directly to the platforms. Our pricing covers strategy, management, and implementation."}},
-    {"@type":"Question","name":"How is pricing determined?","acceptedAnswer":{"@type":"Answer","text":"Pricing is based on scope of work — what channels are needed, current assets, market requirements, and implementation. We do not force every shop into the same plan."}},
-    {"@type":"Question","name":"Do you build landing pages?","acceptedAnswer":{"@type":"Answer","text":"Yes. Landing page strategy is included in the Market Leader and Local Dominator packages. Website and landing page improvements are also part of the Foundation package."}},
-    {"@type":"Question","name":"Do you help with Google Ads?","acceptedAnswer":{"@type":"Answer","text":"Yes. Google Ads strategy and management is included in the Market Leader and Local Dominator packages."}},
-    {"@type":"Question","name":"Do you help with SEO?","acceptedAnswer":{"@type":"Answer","text":"Yes. Local SEO cleanup is included in the Foundation package. Local SEO and GBP growth is in the Market Leader. Full SEO and local authority building is in the Local Dominator."}},
-    {"@type":"Question","name":"What type of shops are a good fit?","acceptedAnswer":{"@type":"Answer","text":"PPF installers, window tint shops, ceramic coating studios, vinyl wrap businesses, and auto detailing operations — shops that do quality work and want real structure behind their business."}}
+    {"@type":"Question","name":"Do you work with more than one shop in the same area?","acceptedAnswer":{"@type":"Answer","text":"No. We only partner with one qualifying shop per protected 50-mile service area."}},
+    {"@type":"Question","name":"Are contracts long-term?","acceptedAnswer":{"@type":"Answer","text":"All agreements are month to month. Contract length depends on the scope of work and what the shop needs."}},
+    {"@type":"Question","name":"Is ad spend included in pricing?","acceptedAnswer":{"@type":"Answer","text":"No. Ad spend is paid directly to the platforms and is separate from our fee."}},
+    {"@type":"Question","name":"How is pricing determined?","acceptedAnswer":{"@type":"Answer","text":"Pricing is based on scope of work. We do not force every shop into the same plan."}},
+    {"@type":"Question","name":"What happens after I submit the form?","acceptedAnswer":{"@type":"Answer","text":"We review your submission, check whether your market is available, look at your current online presence, and reach out to schedule an intake call where we walk through what we see, give you honest feedback on what we would improve, and discuss whether working together makes sense."}}
   ]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
@@ -22,25 +19,39 @@
 </head>
 <body>
 <nav id="nav">
-  <a href="/" class="nav-logo"><img src="/images/tag-logo-white.png" alt="True Auto Growth"/></a>
+  <a href="/" class="nav-logo">
+    <img src="/images/tag-logo.svg" alt="True Auto Growth" width="180" height="45"/>
+  </a>
   <ul class="nav-links">
-    <li class="nav-dropdown"><a href="/services.html">Services</a><div class="nav-dropdown-menu"><a href="/services.html#foundation">Foundation</a><a href="/services.html#market-leader">Market Leader</a><a href="/services.html#dominator">Local Dominator</a></div></li>
+    <li class="nav-dropdown">
+      <a href="/services.html">Packages</a>
+      <div class="nav-dropdown-menu">
+        <a href="/packages/foundation.html">Foundation</a>
+        <a href="/packages/market-leader.html">Market Leader</a>
+        <a href="/packages/local-dominator.html">Local Dominator</a>
+      </div>
+    </li>
     <li><a href="/industries.html">Industries</a></li>
     <li><a href="/about.html">About</a></li>
     <li><a href="/faq.html">FAQ</a></li>
     <li><a href="/contact.html" class="nav-cta">Check Market Availability</a></li>
   </ul>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="/services.html" onclick="closeMenu()">Services</a>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+  <a href="/services.html" onclick="closeMenu()">Packages</a>
+  <a href="/packages/foundation.html" class="msub" onclick="closeMenu()">Foundation</a>
+  <a href="/packages/market-leader.html" class="msub" onclick="closeMenu()">Market Leader</a>
+  <a href="/packages/local-dominator.html" class="msub" onclick="closeMenu()">Local Dominator</a>
   <a href="/industries.html" onclick="closeMenu()">Industries</a>
   <a href="/about.html" onclick="closeMenu()">About</a>
   <a href="/faq.html" onclick="closeMenu()">FAQ</a>
   <a href="/contact.html" class="mcta" onclick="closeMenu()">Check Market Availability</a>
 </div>
 
-<section class="page-hero" style="min-height:50svh;">
+<section class="page-hero" style="min-height:clamp(300px,45svh,480px);">
   <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&auto=format&fit=crop&q=85');"></div>
   <div class="page-hero-inner">
     <div class="s-label">Frequently Asked Questions</div>
@@ -51,53 +62,56 @@
 
 <section>
   <div class="container">
-    <div style="display:grid;grid-template-columns:240px 1fr;gap:clamp(40px,6vw,90px);align-items:start;" class="reveal">
-      <div style="position:sticky;top:90px;">
-        <div class="s-label">Jump To</div>
-        <div style="display:flex;flex-direction:column;gap:2px;margin-top:12px;">
-          <a href="#availability" style="font-size:13px;font-weight:600;color:var(--t50);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--border);transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Market Availability</a>
-          <a href="#exclusivity" style="font-size:13px;font-weight:600;color:var(--t50);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--border);transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Market Protection</a>
-          <a href="#pricing" style="font-size:13px;font-weight:600;color:var(--t50);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--border);transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Pricing & Scope</a>
-          <a href="#whats-included" style="font-size:13px;font-weight:600;color:var(--t50);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--border);transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">What's Included</a>
-          <a href="#fit" style="font-size:13px;font-weight:600;color:var(--t50);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--border);transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Who's a Fit</a>
-          <a href="#getting-started" style="font-size:13px;font-weight:600;color:var(--t50);text-decoration:none;padding:9px 0;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Getting Started</a>
+    <div style="display:grid;grid-template-columns:220px 1fr;gap:clamp(40px,6vw,90px);align-items:start;" class="reveal">
+      <div style="position:sticky;top:88px;">
+        <div class="s-label" style="margin-bottom:14px;">Jump to</div>
+        <div class="sidebar-nav">
+          <a href="#availability">Market Availability</a>
+          <a href="#exclusivity">Market Protection</a>
+          <a href="#pricing">Pricing and Contracts</a>
+          <a href="#included">What Is Included</a>
+          <a href="#fit">Who Fits</a>
+          <a href="#process">Getting Started</a>
         </div>
       </div>
       <div>
         <div id="availability" style="margin-bottom:48px;">
-          <h2 style="font-size:16px;font-weight:700;color:var(--blue);margin-bottom:16px;text-transform:uppercase;letter-spacing:0.12em;">Market Availability</h2>
-          <div class="faq-item"><div class="faq-q">Do you work with shops nationwide?</div><div class="faq-a">Yes. True Auto Growth works with qualifying shops across the United States. Geography is not the limiting factor — market availability is what determines whether we can take on a new client in your area.</div></div>
-          <div class="faq-item"><div class="faq-q">How do I know if my market is open?</div><div class="faq-a">Submit the form on the contact page. We check availability and respond before we discuss anything else. If the market is taken, we tell you immediately so you are not wasting your time.</div></div>
+          <h2 style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.14em;">Market Availability</h2>
+          <div class="faq-item"><div class="faq-q">Do you work with shops nationwide?</div><div class="faq-a">Yes. We work with qualifying shops across the United States. Where you are located is not the issue. Market availability is.</div></div>
+          <div class="faq-item"><div class="faq-q">How do I find out if my market is open?</div><div class="faq-a">Submit the form on the contact page. We check availability first and respond before we discuss anything else. If the market is taken we tell you up front.</div></div>
         </div>
         <div id="exclusivity" style="margin-bottom:48px;">
-          <h2 style="font-size:16px;font-weight:700;color:var(--blue);margin-bottom:16px;text-transform:uppercase;letter-spacing:0.12em;">Market Protection</h2>
-          <div class="faq-item"><div class="faq-q">Do you work with more than one shop in the same area?</div><div class="faq-a">No. To protect our clients and avoid competing against our own strategy, we only partner with one qualifying shop per protected 50-mile service area. Once a market is claimed, it is closed to competing shops until the partnership ends.</div></div>
-          <div class="faq-item"><div class="faq-q">What does protected market exclusivity mean?</div><div class="faq-a">Once we partner with a shop in a market, we will not take on another client offering the same services in that protected area. The positioning we build, the strategy we develop, and the infrastructure we put in place are yours — not shared with a competitor down the road.</div></div>
-          <div class="faq-item"><div class="faq-q">What if my market gets claimed while I am deciding?</div><div class="faq-a">Markets are claimed on a first-application basis. If a qualifying shop in your area submits before you do, that market closes. If you are seriously considering reaching out, sooner is better.</div></div>
+          <h2 style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.14em;">Market Protection</h2>
+          <div class="faq-item"><div class="faq-q">Do you work with more than one shop in the same area?</div><div class="faq-a">No. To protect our clients and avoid competing against our own work, we only partner with one qualifying shop per protected 50-mile service area. Once a market is claimed it stays closed to competing shops for the life of the partnership.</div></div>
+          <div class="faq-item"><div class="faq-q">What does protected market exclusivity actually mean?</div><div class="faq-a">It means the strategy we build for your shop, the positioning, the campaigns, the messaging stays yours. We are not going to build the same infrastructure for your competitor down the road. Once your market is claimed it is off limits to competing shops.</div></div>
+          <div class="faq-item"><div class="faq-q">What if my market gets claimed while I am thinking about it?</div><div class="faq-a">Markets fill on a first-come basis. If a qualifying shop in your area submits before you do, that market closes. If you are seriously considering reaching out, do not wait.</div></div>
         </div>
         <div id="pricing" style="margin-bottom:48px;">
-          <h2 style="font-size:16px;font-weight:700;color:var(--blue);margin-bottom:16px;text-transform:uppercase;letter-spacing:0.12em;">Pricing & Scope</h2>
-          <div class="faq-item"><div class="faq-q">How is pricing determined?</div><div class="faq-a">Pricing is based on scope of work. What channels are needed, what your current assets look like, how competitive your market is, and how much implementation is required all factor in. We do not force every shop into the same plan. Starting points are discussed on your intake call.</div></div>
-          <div class="faq-item"><div class="faq-q">Is ad spend included in the pricing?</div><div class="faq-a">No. Ad spend for Google Ads and Meta Ads is paid directly to the advertising platforms — separate from our fee. Our pricing covers strategy, campaign management, landing pages, SEO, and implementation. We help you determine the right budget for your market during the intake call.</div></div>
-          <div class="faq-item"><div class="faq-q">Are there long-term contracts?</div><div class="faq-a">Our agreements are structured to give both sides a fair runway to build and see results, without locking you into something unreasonable. Specifics are covered on your intake call.</div></div>
+          <h2 style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.14em;">Pricing and Contracts</h2>
+          <div class="faq-item"><div class="faq-q">How is pricing determined?</div><div class="faq-a">Pricing is based on scope of work. What your shop needs, what your current assets look like, how competitive your market is, and which channels are being used all factor in. We do not have flat rates that apply the same way to every shop.</div></div>
+          <div class="faq-item"><div class="faq-q">Are contracts long-term?</div><div class="faq-a">All agreements are month to month. The length of the engagement depends on the scope of work and what your shop needs. We do not lock you into multi-year contracts.</div></div>
+          <div class="faq-item"><div class="faq-q">Is ad spend included in pricing?</div><div class="faq-a">No. Ad spend for Google Ads and Meta Ads is paid directly to the advertising platforms and is separate from our fee. We help you determine the right budget for your market on your intake call.</div></div>
+          <div class="faq-item"><div class="faq-q">Do you take performance pay?</div><div class="faq-a">No. We work on a retainer model only. Pricing is a flat monthly fee based on scope of work. There is no performance-based component to our pricing.</div></div>
         </div>
-        <div id="whats-included" style="margin-bottom:48px;">
-          <h2 style="font-size:16px;font-weight:700;color:var(--blue);margin-bottom:16px;text-transform:uppercase;letter-spacing:0.12em;">What's Included</h2>
-          <div class="faq-item"><div class="faq-q">Do you build landing pages?</div><div class="faq-a">Yes. Landing page strategy is included in the Market Leader and Local Dominator packages. Website and landing page improvements are also part of the Foundation package.</div></div>
+        <div id="included" style="margin-bottom:48px;">
+          <h2 style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.14em;">What Is Included</h2>
+          <div class="faq-item"><div class="faq-q">Do you set up and manage a CRM?</div><div class="faq-a">Yes. CRM setup and implementation is included in every package starting at Foundation. This is one of the most important pieces of the infrastructure and one of the most commonly overlooked.</div></div>
+          <div class="faq-item"><div class="faq-q">Do you help with offer optimization?</div><div class="faq-a">Yes. How your services are packaged, priced, and positioned has a direct impact on lead quality and close rate. We work on offer clarity and positioning as part of every engagement.</div></div>
+          <div class="faq-item"><div class="faq-q">Do you build landing pages?</div><div class="faq-a">Yes. Website and landing page improvements are part of Foundation. Landing page strategy for paid campaigns is included in Market Leader and Local Dominator.</div></div>
           <div class="faq-item"><div class="faq-q">Do you help with Google Ads?</div><div class="faq-a">Yes. Google Ads strategy and campaign management is included in the Market Leader and Local Dominator packages.</div></div>
-          <div class="faq-item"><div class="faq-q">Do you help with SEO?</div><div class="faq-a">Yes. Local SEO cleanup is included in the Foundation package. Local SEO and GBP growth is in the Market Leader. Full SEO and local authority building is in the Local Dominator.</div></div>
-          <div class="faq-item"><div class="faq-q">Do you manage social media?</div><div class="faq-a">Content strategy is part of certain packages, but we are not a social media management agency. Our focus is on building the structure that produces booked jobs — not follower counts.</div></div>
+          <div class="faq-item"><div class="faq-q">Do you help with SEO?</div><div class="faq-a">Yes. Local SEO cleanup is part of Foundation. Local SEO and GBP growth is in Market Leader. Advanced SEO and local authority building is in Local Dominator.</div></div>
+          <div class="faq-item"><div class="faq-q">Do you manage social media?</div><div class="faq-a">Content strategy is part of certain packages. We are not a social media management agency. Our focus is on infrastructure that produces booked jobs. Follower counts are not a metric we care about.</div></div>
         </div>
         <div id="fit" style="margin-bottom:48px;">
-          <h2 style="font-size:16px;font-weight:700;color:var(--blue);margin-bottom:16px;text-transform:uppercase;letter-spacing:0.12em;">Who's a Fit</h2>
-          <div class="faq-item"><div class="faq-q">What type of shops are a good fit?</div><div class="faq-a">PPF installers, window tint shops, ceramic coating studios, vinyl wrap businesses, and auto detailing operations — particularly shops that do quality work and want real structure behind the business, not just a few boosted posts.</div></div>
-          <div class="faq-item"><div class="faq-q">Do you work with newer shops?</div><div class="faq-a">It depends on the situation. Shops that are newer and still building their operation typically start with the Foundation package to get the right pieces in place before scaling paid spend. We will tell you honestly what makes sense on the intake call.</div></div>
-          <div class="faq-item"><div class="faq-q">Do you work with businesses outside of automotive restyling and detailing?</div><div class="faq-a">No. We work exclusively with PPF, tint, ceramic, wrap, and detailing businesses. That focus is intentional.</div></div>
+          <h2 style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.14em;">Who Fits</h2>
+          <div class="faq-item"><div class="faq-q">What type of shops are the right fit?</div><div class="faq-a">PPF installers, window tint shops, ceramic coating studios, vinyl wrap businesses, and auto detailing operations. Specifically shops that do quality work and want to build real marketing infrastructure rather than run a few boosted posts and hope something sticks.</div></div>
+          <div class="faq-item"><div class="faq-q">Do you work with newer shops?</div><div class="faq-a">It depends on the situation. Shops that are earlier in their operation typically start with Foundation to get the underlying pieces working properly before scaling paid spend. We will tell you what makes sense on the intake call.</div></div>
+          <div class="faq-item"><div class="faq-q">Do you work with businesses outside of automotive restyling and detailing?</div><div class="faq-a">No. We work exclusively in this space. That focus is intentional and it is what keeps our work relevant and our understanding of the industry sharp.</div></div>
         </div>
-        <div id="getting-started">
-          <h2 style="font-size:16px;font-weight:700;color:var(--blue);margin-bottom:16px;text-transform:uppercase;letter-spacing:0.12em;">Getting Started</h2>
-          <div class="faq-item"><div class="faq-q">What happens after I submit the form?</div><div class="faq-a">We review your information and check whether your market is available. If it is open and your shop looks like a potential fit, we reach out to schedule an intake call. On that call we look at your current setup, your market, and talk through which package makes the most sense to start with.</div></div>
-          <div class="faq-item"><div class="faq-q">Do you guarantee results?</div><div class="faq-a">No. We will not promise a specific number of leads or revenue outcome. Growth depends on your market, your pricing, your offer, and execution on both sides. What we will do is build the strongest possible structure for your shop and be transparent about what it is producing.</div></div>
+        <div id="process">
+          <h2 style="font-size:15px;font-weight:700;color:var(--blue);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.14em;">Getting Started</h2>
+          <div class="faq-item"><div class="faq-q">What happens after I submit the form?</div><div class="faq-a">We review your submission, check whether your market is available, and look at your current online presence before we get on a call. When we connect, we walk through what we see, share honest feedback on what we would improve and why, and discuss whether working together actually makes sense for your shop. No pressure. Just a real conversation.</div></div>
+          <div class="faq-item"><div class="faq-q">Do you guarantee results?</div><div class="faq-a">No. We will not promise a specific number of leads or a revenue outcome. Growth depends on your market, your offer, your pricing, and execution on both sides. What we will do is build the best possible infrastructure for your shop and be transparent about what it is producing.</div></div>
         </div>
       </div>
     </div>
@@ -109,19 +123,46 @@
   <div class="cta-inner">
     <div class="s-label" style="justify-content:center;margin-bottom:14px;">Still have questions?</div>
     <h2>Check if your market<br/>is still <span>available.</span></h2>
-    <p>Submit the form and we will check availability and answer anything specific to your shop and market.</p>
+    <p>Submit the form and we will answer anything specific to your shop and market.</p>
     <div class="cta-btns"><a href="/contact.html" class="btn">Check Market Availability</a></div>
   </div>
 </div>
 
 <footer>
   <div class="footer-top container">
-    <div class="footer-brand"><img src="/images/tag-logo-white.png" alt="True Auto Growth"/><p>Marketing for PPF, tint, ceramic, wrap, and detailing businesses across the United States. Industry-rooted. One market partner at a time.</p></div>
-    <div class="footer-col"><h4>Packages</h4><a href="/services.html#foundation">Foundation</a><a href="/services.html#market-leader">Market Leader</a><a href="/services.html#dominator">Local Dominator</a></div>
-    <div class="footer-col"><h4>Industries</h4><a href="/industries/ppf.html">PPF Shops</a><a href="/industries/window-tint.html">Window Tint</a><a href="/industries/ceramic-coating.html">Ceramic Coating</a><a href="/industries/vinyl-wrap.html">Vinyl Wrap</a><a href="/industries/detailing.html">Auto Detailing</a></div>
-    <div class="footer-col"><h4>Company</h4><a href="/about.html">About</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a><a href="/contact.html" style="color:var(--blue);margin-top:6px;">Check Market Availability</a></div>
+    <div class="footer-brand">
+      <div class="logo-wrap"><img src="/images/tag-logo.svg" alt="True Auto Growth" width="160" height="40"/></div>
+      <p>Marketing infrastructure for PPF, tint, ceramic, wrap, and detailing businesses across the United States. Industry-rooted. One market partner at a time.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Packages</h4>
+      <a href="/packages/foundation.html">Foundation</a>
+      <a href="/packages/market-leader.html">Market Leader</a>
+      <a href="/packages/local-dominator.html">Local Dominator</a>
+    </div>
+    <div class="footer-col">
+      <h4>Industries</h4>
+      <a href="/industries.html#ppf">PPF Shops</a>
+      <a href="/industries.html#tint">Window Tint</a>
+      <a href="/industries.html#ceramic">Ceramic Coating</a>
+      <a href="/industries.html#wrap">Vinyl Wrap</a>
+      <a href="/industries.html#detailing">Auto Detailing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/contact.html" style="color:var(--blue);margin-top:6px;">Check Market Availability</a>
+    </div>
   </div>
-  <div class="footer-bottom container"><p class="footer-copy">&copy; 2025 True Auto Growth. All rights reserved.</p><div class="footer-legal"><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms</a></div></div>
+  <div class="footer-bottom container">
+    <p class="footer-copy">&copy; 2025 True Auto Growth. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </div>
+  </div>
 </footer>
 <script src="/js/main.js"></script>
 </body>
