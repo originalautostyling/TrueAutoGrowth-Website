@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+  <meta name="theme-color" content="#08090C"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FAQ | True Auto Growth</title>
   <meta name="description" content="Answers to common questions about True Auto Growth. Market exclusivity, pricing, what is included, contracts, and how the intake process works."/>
   <link rel="canonical" href="https://trueautogrowth.com/faq.html"/>
@@ -20,7 +24,7 @@
 <body>
 <nav id="nav">
   <a href="/" class="nav-logo">
-    <img src="/images/tag-logo.svg" alt="True Auto Growth" width="180" height="45"/>
+    <img src="/images/tag-logo.svg" alt="True Auto Growth" width="200" height="50" loading="eager"/>
   </a>
   <ul class="nav-links">
     <li class="nav-dropdown">
@@ -51,8 +55,30 @@
   <a href="/contact.html" class="mcta" onclick="closeMenu()">Check Market Availability</a>
 </div>
 
+
+    </li>
+    <li><a href="/industries.html">Industries</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/faq.html">FAQ</a></li>
+    <li><a href="/contact.html" class="nav-cta">Check Market Availability</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+  <a href="/services.html" onclick="closeMenu()">Packages</a>
+  <a href="/packages/foundation.html" class="msub" onclick="closeMenu()">Foundation</a>
+  <a href="/packages/market-leader.html" class="msub" onclick="closeMenu()">Market Leader</a>
+  <a href="/packages/local-dominator.html" class="msub" onclick="closeMenu()">Local Dominator</a>
+  <a href="/industries.html" onclick="closeMenu()">Industries</a>
+  <a href="/about.html" onclick="closeMenu()">About</a>
+  <a href="/faq.html" onclick="closeMenu()">FAQ</a>
+  <a href="/contact.html" class="mcta" onclick="closeMenu()">Check Market Availability</a>
+</div>
+
 <section class="page-hero" style="min-height:clamp(300px,45svh,480px);">
-  <div class="page-hero-bg" style="background-image:url('/images/corvette-shop.jpg');background-position:center 40%;"></div>
+  <div class="page-hero-bg" style="background-image:url('/images/ferrari-detail-closeup.jpg');background-position:center 30%;"></div>
   <div class="page-hero-inner">
     <div class="s-label">Frequently Asked Questions</div>
     <h1>Straight answers.</h1>
@@ -119,7 +145,7 @@
 </section>
 
 <div class="cta-section">
-  <div class="cta-bg" style="background-image:url('/images/bmw-m4-exterior.jpg');background-position:center 50%;"></div>
+  <div class="cta-bg" style="background-image:url('/images/ceramic-coating-apply.jpg');background-position:center 40%;"></div>
   <div class="cta-inner">
     <div class="s-label" style="justify-content:center;margin-bottom:14px;">Still have questions?</div>
     <h2>Check if your market<br/>is still <span>available.</span></h2>
@@ -131,7 +157,7 @@
 <footer>
   <div class="footer-top container">
     <div class="footer-brand">
-      <div class="logo-wrap"><img src="/images/tag-logo.svg" alt="True Auto Growth" width="160" height="40"/></div>
+      <div class="logo-wrap"><img src="/images/tag-logo.svg" alt="True Auto Growth" width="160" height="40" loading="lazy"/></div>
       <p>Marketing infrastructure for PPF, tint, ceramic, wrap, and detailing businesses across the United States. Industry-rooted. One market partner at a time.</p>
     </div>
     <div class="footer-col">
@@ -153,7 +179,8 @@
       <a href="/about.html">About</a>
       <a href="/faq.html">FAQ</a>
       <a href="/contact.html">Contact</a>
-      <a href="/contact.html" style="color:var(--blue);margin-top:6px;">Check Market Availability</a>
+      <a href="mailto:sales@trueautogrowth.com" style="color:var(--blue);">sales@trueautogrowth.com</a>
+      <a href="/contact.html" style="color:var(--blue);margin-top:4px;font-weight:700;">Check Market Availability</a>
     </div>
   </div>
   <div class="footer-bottom container">
@@ -164,6 +191,7 @@
     </div>
   </div>
 </footer>
+
 <script src="/js/main.js"></script>
 </body>
 </html>

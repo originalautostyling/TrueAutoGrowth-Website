@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+  <meta name="theme-color" content="#08090C"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>True Auto Growth | Marketing for PPF, Tint, Ceramic Coating & Detailing Shops</title>
   <meta name="description" content="True Auto Growth builds marketing infrastructure for PPF, window tint, ceramic coating, vinyl wrap, and detailing businesses across the United States. Industry-rooted strategy. One shop per market."/>
   <meta name="keywords" content="PPF shop marketing, window tint marketing, ceramic coating marketing, vinyl wrap marketing, auto detailing marketing, detailing business growth, Google Ads PPF installer, SEO ceramic coating"/>
@@ -22,7 +26,7 @@
 <body>
 <nav id="nav">
   <a href="/" class="nav-logo">
-    <img src="/images/tag-logo.svg" alt="True Auto Growth" width="180" height="45"/>
+    <img src="/images/tag-logo.svg" alt="True Auto Growth" width="200" height="50" loading="eager"/>
   </a>
   <ul class="nav-links">
     <li class="nav-dropdown">
@@ -32,6 +36,28 @@
         <a href="/packages/market-leader.html">Market Leader</a>
         <a href="/packages/local-dominator.html">Local Dominator</a>
       </div>
+    </li>
+    <li><a href="/industries.html">Industries</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/faq.html">FAQ</a></li>
+    <li><a href="/contact.html" class="nav-cta">Check Market Availability</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+  <a href="/services.html" onclick="closeMenu()">Packages</a>
+  <a href="/packages/foundation.html" class="msub" onclick="closeMenu()">Foundation</a>
+  <a href="/packages/market-leader.html" class="msub" onclick="closeMenu()">Market Leader</a>
+  <a href="/packages/local-dominator.html" class="msub" onclick="closeMenu()">Local Dominator</a>
+  <a href="/industries.html" onclick="closeMenu()">Industries</a>
+  <a href="/about.html" onclick="closeMenu()">About</a>
+  <a href="/faq.html" onclick="closeMenu()">FAQ</a>
+  <a href="/contact.html" class="mcta" onclick="closeMenu()">Check Market Availability</a>
+</div>
+
+
     </li>
     <li><a href="/industries.html">Industries</a></li>
     <li><a href="/about.html">About</a></li>
@@ -247,7 +273,7 @@
   <div class="container">
     <div class="grid-2 reveal">
       <div class="proof-img">
-        <img src="/images/founder-ceramic.jpg" alt="True Auto Growth founder applying ceramic coating at Original Auto Styling shop in Madison Alabama"/>
+        <img src="/images/gtr-wash-front.jpg" alt="True Auto Growth team washing a Nissan GTR at a premium automotive detailing event"/>
         <div class="proof-accent"></div>
       </div>
       <div>
@@ -301,7 +327,7 @@
 <footer>
   <div class="footer-top container">
     <div class="footer-brand">
-      <div class="logo-wrap"><img src="/images/tag-logo.svg" alt="True Auto Growth" width="160" height="40"/></div>
+      <div class="logo-wrap"><img src="/images/tag-logo.svg" alt="True Auto Growth" width="160" height="40" loading="lazy"/></div>
       <p>Marketing infrastructure for PPF, tint, ceramic, wrap, and detailing businesses across the United States. Industry-rooted. One market partner at a time.</p>
     </div>
     <div class="footer-col">
@@ -323,7 +349,8 @@
       <a href="/about.html">About</a>
       <a href="/faq.html">FAQ</a>
       <a href="/contact.html">Contact</a>
-      <a href="/contact.html" style="color:var(--blue);margin-top:6px;">Check Market Availability</a>
+      <a href="mailto:sales@trueautogrowth.com" style="color:var(--blue);">sales@trueautogrowth.com</a>
+      <a href="/contact.html" style="color:var(--blue);margin-top:4px;font-weight:700;">Check Market Availability</a>
     </div>
   </div>
   <div class="footer-bottom container">
@@ -334,4 +361,5 @@
     </div>
   </div>
 </footer>
+
 <script src="/js/main.js"></script></body></html>
