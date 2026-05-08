@@ -647,145 +647,100 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-bg img,
 .cta-bg img { width: 100%; height: 100%; object-fit: cover; }
 
-/* ── FOUNDER CARDS ── */
-.founder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px,3vw,32px); }
-.founder-card {
-  background: var(--bg3); border: 1px solid var(--border); border-radius: var(--r);
-  overflow: hidden; position: relative;
-  transition: border-color .3s;
-}
-.founder-card:hover { border-color: var(--blue-bd); }
-.founder-photo { aspect-ratio: 4/3; overflow: hidden; position: relative; }
-.founder-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; filter: brightness(.88); transition: transform .7s ease; }
-.founder-card:hover .founder-photo img { transform: scale(1.03); }
-.founder-photo::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(to bottom, transparent, var(--bg3)); }
-.founder-body { padding: clamp(20px,2.5vw,30px); }
-.founder-role { font-size: 9px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
-.founder-name { font-size: clamp(20px,2vw,24px); font-weight: 800; color: var(--white); margin-bottom: 4px; letter-spacing: -0.01em; }
-.founder-tag { font-size: 11px; color: var(--t50); margin-bottom: 14px; font-weight: 600; }
-.founder-bio { font-size: 14px; color: var(--t70); line-height: 1.75; }
+/* ── NEW COMPONENTS (added clean, no duplicates) ── */
 
-/* ── COMPARISON TABLE ── */
-.compare-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px,1.5vw,18px); }
-.compare-col {
-  background: var(--bg3); border: 1px solid var(--border); border-radius: var(--r);
-  padding: clamp(20px,2.5vw,28px);
-}
-.compare-col.them { opacity: 0.65; }
-.compare-col.us { border-color: var(--blue); background: linear-gradient(160deg, var(--bg3), rgba(14,68,252,0.07)); }
-.compare-col.us .compare-label { color: var(--blue); }
-.compare-label { font-size: 9px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(--t30); margin-bottom: 10px; }
-.compare-name { font-size: 15px; font-weight: 800; color: var(--white); margin-bottom: 16px; letter-spacing: -0.01em; }
-.compare-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
-.compare-list li { font-size: 12px; color: var(--t70); line-height: 1.55; display: flex; align-items: flex-start; gap: 8px; }
-.compare-list li::before { content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background: var(--t30); margin-top: 6px; flex-shrink: 0; }
-.compare-col.us .compare-list li::before { background: var(--blue); }
-.compare-col.us .compare-list li { color: var(--t90); }
+/* Proof Bar */
+.proof-bar { display:flex; align-items:center; flex-wrap:wrap; gap:0; margin-top:36px; opacity:0; animation:fadeup .8s 1.1s ease forwards; }
+.proof-stat { display:flex; flex-direction:column; padding:0 clamp(16px,2.5vw,28px); border-right:1px solid rgba(255,255,255,0.12); }
+.proof-stat:first-child { padding-left:0; }
+.proof-stat:last-child { border-right:none; }
+.proof-stat-num { font-size:clamp(20px,2.5vw,28px); font-weight:800; color:var(--white); letter-spacing:-0.02em; line-height:1; margin-bottom:3px; }
+.proof-stat-num span { color:var(--blue); }
+.proof-stat-label { font-size:10px; font-weight:600; color:var(--t30); letter-spacing:0.08em; text-transform:uppercase; }
 
-/* ── PROOF OF PROCESS CARDS ── */
-.process-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px,1.5vw,18px); }
-.proc-card {
-  background: var(--bg3); border: 1px solid var(--border); border-radius: var(--r);
-  padding: clamp(18px,2vw,24px);
-  transition: border-color .3s, transform .25s;
-}
-.proc-card:hover { border-color: var(--blue-bd); transform: translateY(-3px); }
-.proc-num { font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
-.proc-card h4 { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 8px; letter-spacing: -0.01em; }
-.proc-card p { font-size: 12px; color: var(--t50); line-height: 1.65; }
+/* Secondary Button */
+.btn-secondary { display:inline-flex; align-items:center; justify-content:center; gap:8px; background:rgba(14,68,252,0.12); color:var(--blue); font-family:'DM Sans',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:14px 28px; border:1px solid var(--blue-bd); border-radius:var(--r); text-decoration:none; cursor:pointer; transition:background .2s, color .2s, transform .2s; white-space:nowrap; min-height:48px; -webkit-tap-highlight-color:transparent; }
+.btn-secondary:hover { background:rgba(14,68,252,0.22); transform:translateY(-2px); }
 
-/* ── BELIEF CARDS ── */
-.belief-list { display: flex; flex-direction: column; gap: 2px; }
-.belief-item {
-  display: flex; align-items: flex-start; gap: 16px;
-  padding: 18px 20px;
-  background: var(--bg3); border: 1px solid var(--border); border-radius: var(--r);
-  transition: border-color .3s;
-}
-.belief-item:hover { border-color: var(--blue-bd); }
-.belief-icon { color: var(--blue); font-size: 18px; flex-shrink: 0; margin-top: 1px; line-height: 1; }
-.belief-item p { font-size: 14px; color: var(--t70); line-height: 1.7; }
-.belief-item strong { color: var(--white); }
+/* Founder Cards */
+.founder-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(20px,3vw,32px); }
+.founder-card { background:var(--bg3); border:1px solid var(--border); border-radius:var(--r); overflow:hidden; transition:border-color .3s; }
+.founder-card:hover { border-color:var(--blue-bd); }
+.founder-photo { aspect-ratio:4/3; overflow:hidden; position:relative; }
+.founder-photo img { width:100%; height:100%; object-fit:cover; object-position:center 20%; filter:brightness(.88); transition:transform .7s ease; }
+.founder-card:hover .founder-photo img { transform:scale(1.03); }
+.founder-photo::after { content:''; position:absolute; bottom:0; left:0; right:0; height:40%; background:linear-gradient(to bottom, transparent, var(--bg3)); pointer-events:none; }
+.founder-body { padding:clamp(20px,2.5vw,30px); }
+.founder-role { font-size:9px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:var(--blue); margin-bottom:6px; }
+.founder-name { font-size:clamp(20px,2vw,24px); font-weight:800; color:var(--white); margin-bottom:4px; letter-spacing:-0.01em; }
+.founder-tag { font-size:11px; color:var(--t50); margin-bottom:14px; font-weight:600; }
+.founder-bio { font-size:14px; color:var(--t70); line-height:1.75; }
 
-/* ── QUOTE SECTION ── */
-.quote-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px,2vw,24px); }
-.quote-card {
-  background: var(--bg3); border: 1px solid var(--border); border-radius: var(--r);
-  padding: clamp(24px,3vw,36px); position: relative;
-}
-.quote-card::before { content: '\201C'; position: absolute; top: 16px; left: 22px; font-size: 72px; color: var(--blue); opacity: 0.15; line-height: 1; font-family: Georgia, serif; }
-.quote-text { font-size: clamp(15px,1.3vw,17px); color: var(--white); line-height: 1.75; font-weight: 500; margin-bottom: 20px; font-style: italic; padding-top: 18px; }
-.quote-author { display: flex; align-items: center; gap: 12px; }
-.quote-avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: center 15%; border: 2px solid var(--blue-bd); flex-shrink: 0; }
-.quote-name { font-size: 13px; font-weight: 700; color: var(--white); }
-.quote-role { font-size: 11px; color: var(--t50); }
+/* Comparison Grid */
+.compare-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(12px,1.5vw,18px); }
+.compare-col { background:var(--bg3); border:1px solid var(--border); border-radius:var(--r); padding:clamp(20px,2.5vw,28px); }
+.compare-col.them { opacity:0.65; }
+.compare-col.us { border-color:var(--blue); background:linear-gradient(160deg, var(--bg3), rgba(14,68,252,0.07)); }
+.compare-col.us .compare-label { color:var(--blue); }
+.compare-label { font-size:9px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:var(--t30); margin-bottom:10px; }
+.compare-name { font-size:15px; font-weight:800; color:var(--white); margin-bottom:16px; letter-spacing:-0.01em; }
+.compare-list { list-style:none; display:flex; flex-direction:column; gap:9px; }
+.compare-list li { font-size:12px; color:var(--t70); line-height:1.55; display:flex; align-items:flex-start; gap:8px; }
+.compare-list li::before { content:''; display:block; width:4px; height:4px; border-radius:50%; background:var(--t30); margin-top:6px; flex-shrink:0; }
+.compare-col.us .compare-list li::before { background:var(--blue); }
+.compare-col.us .compare-list li { color:var(--t90); }
 
-/* ── NOT FOR EVERY SHOP ── */
-.not-for-card {
-  background: linear-gradient(135deg, var(--bg3), rgba(14,68,252,0.05));
-  border: 1px solid var(--border); border-radius: var(--r);
-  padding: clamp(28px,4vw,48px);
-  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px,3vw,40px); align-items: center;
-}
-.not-for-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
-.not-for-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--t50); line-height: 1.6; }
-.not-for-list li::before { content: '✕'; color: rgba(255,80,80,0.5); flex-shrink: 0; font-size: 11px; margin-top: 3px; }
-.for-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
-.for-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--t70); line-height: 1.6; }
-.for-list li::before { content: ''; display: block; width: 5px; height: 5px; border-radius: 50%; background: var(--blue); margin-top: 8px; flex-shrink: 0; }
+/* Proof of Process Cards */
+.process-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(12px,1.5vw,18px); }
+.proc-card { background:var(--bg3); border:1px solid var(--border); border-radius:var(--r); padding:clamp(18px,2vw,24px); transition:border-color .3s, transform .25s; }
+.proc-card:hover { border-color:var(--blue-bd); transform:translateY(-3px); }
+.proc-num { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--blue); margin-bottom:12px; }
+.proc-card h4 { font-size:14px; font-weight:700; color:var(--white); margin-bottom:8px; letter-spacing:-0.01em; }
+.proc-card p { font-size:12px; color:var(--t50); line-height:1.65; }
 
-/* ── PROOF BAR ── */
-.proof-bar {
-  display: flex; align-items: center; flex-wrap: wrap; gap: 0;
-  margin-top: 36px;
-  opacity: 0; animation: fadeup .8s 1.1s ease forwards;
-}
-.proof-stat {
-  display: flex; flex-direction: column;
-  padding: 0 clamp(16px,2.5vw,28px);
-  border-right: 1px solid rgba(255,255,255,0.12);
-}
-.proof-stat:first-child { padding-left: 0; }
-.proof-stat:last-child { border-right: none; }
-.proof-stat-num { font-size: clamp(20px,2.5vw,28px); font-weight: 800; color: var(--white); letter-spacing: -0.02em; line-height: 1; margin-bottom: 3px; }
-.proof-stat-num span { color: var(--blue); }
-.proof-stat-label { font-size: 10px; font-weight: 600; color: var(--t30); letter-spacing: 0.08em; text-transform: uppercase; }
+/* Belief List */
+.belief-list { display:flex; flex-direction:column; gap:2px; }
+.belief-item { display:flex; align-items:flex-start; gap:16px; padding:18px 20px; background:var(--bg3); border:1px solid var(--border); border-radius:var(--r); transition:border-color .3s; }
+.belief-item:hover { border-color:var(--blue-bd); }
+.belief-icon { color:var(--blue); font-size:18px; flex-shrink:0; margin-top:1px; line-height:1; }
+.belief-item p { font-size:14px; color:var(--t70); line-height:1.7; }
+.belief-item strong { color:var(--white); }
 
-/* ── SECONDARY CTA BUTTON ── */
-.btn-secondary {
-  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  background: rgba(14,68,252,0.12); color: var(--blue);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-  padding: 14px 28px; border: 1px solid var(--blue-bd); border-radius: var(--r);
-  text-decoration: none; cursor: pointer;
-  transition: background .2s, color .2s, transform .2s;
-  white-space: nowrap; min-height: 48px;
-  -webkit-tap-highlight-color: transparent;
-}
-.btn-secondary:hover { background: rgba(14,68,252,0.22); transform: translateY(-2px); }
+/* Quote Cards */
+.quote-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(16px,2vw,24px); }
+.quote-card { background:var(--bg3); border:1px solid var(--border); border-radius:var(--r); padding:clamp(24px,3vw,36px); position:relative; }
+.quote-card::before { content:'\201C'; position:absolute; top:16px; left:22px; font-size:72px; color:var(--blue); opacity:0.15; line-height:1; font-family:Georgia,serif; }
+.quote-text { font-size:clamp(15px,1.3vw,17px); color:var(--white); line-height:1.75; font-weight:500; margin-bottom:20px; font-style:italic; padding-top:18px; }
+.quote-author { display:flex; align-items:center; gap:12px; }
+.quote-avatar { width:44px; height:44px; border-radius:50%; object-fit:cover; object-position:center 15%; border:2px solid var(--blue-bd); flex-shrink:0; }
+.quote-name { font-size:13px; font-weight:700; color:var(--white); }
+.quote-role { font-size:11px; color:var(--t50); }
 
-/* ── AUDIT CHECKLIST (contact page) ── */
-.audit-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.audit-list li {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 13px; color: var(--t70);
-  padding: 10px 14px; background: var(--bg3);
-  border: 1px solid var(--border); border-radius: var(--r);
-}
-.audit-list li::before { content: ''; display: block; width: 7px; height: 7px; border-radius: 1px; border: 1.5px solid var(--blue); flex-shrink: 0; }
+/* Not For Every Shop */
+.not-for-card { background:linear-gradient(135deg, var(--bg3), rgba(14,68,252,0.05)); border:1px solid var(--border); border-radius:var(--r); padding:clamp(28px,4vw,48px); display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,3vw,40px); align-items:center; }
+.not-for-list { list-style:none; display:flex; flex-direction:column; gap:8px; margin-top:14px; }
+.not-for-list li { display:flex; align-items:flex-start; gap:10px; font-size:14px; color:var(--t50); line-height:1.6; }
+.not-for-list li::before { content:'\2715'; color:rgba(255,80,80,0.5); flex-shrink:0; font-size:11px; margin-top:3px; }
+.for-list { list-style:none; display:flex; flex-direction:column; gap:8px; margin-top:14px; }
+.for-list li { display:flex; align-items:flex-start; gap:10px; font-size:14px; color:var(--t70); line-height:1.6; }
+.for-list li::before { content:''; display:block; width:5px; height:5px; border-radius:50%; background:var(--blue); margin-top:8px; flex-shrink:0; }
 
-/* ── RESPONSIVE ADDITIONS ── */
+/* Audit Checklist */
+.audit-list { list-style:none; display:flex; flex-direction:column; gap:8px; }
+.audit-list li { display:flex; align-items:center; gap:10px; font-size:13px; color:var(--t70); padding:10px 14px; background:var(--bg3); border:1px solid var(--border); border-radius:var(--r); }
+.audit-list li::before { content:''; display:block; width:7px; height:7px; border-radius:1px; border:1.5px solid var(--blue); flex-shrink:0; }
+
+/* Responsive for new components only */
 @media (max-width: 900px) {
-  .founder-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
-  .compare-grid { grid-template-columns: 1fr 1fr; }
-  .process-cards { grid-template-columns: 1fr 1fr; }
-  .quote-grid { grid-template-columns: 1fr; }
-  .not-for-card { grid-template-columns: 1fr; }
+  .founder-grid { grid-template-columns:1fr; max-width:520px; margin:0 auto; }
+  .compare-grid { grid-template-columns:1fr 1fr; }
+  .process-cards { grid-template-columns:1fr 1fr; }
+  .quote-grid { grid-template-columns:1fr; }
+  .not-for-card { grid-template-columns:1fr; }
 }
 @media (max-width: 640px) {
-  .compare-grid { grid-template-columns: 1fr; }
-  .process-cards { grid-template-columns: 1fr; }
-  .proof-bar { gap: 16px; flex-direction: column; align-items: flex-start; }
-  .proof-stat { padding: 0; border-right: none; }
+  .compare-grid { grid-template-columns:1fr; }
+  .process-cards { grid-template-columns:1fr; }
+  .proof-bar { gap:16px; flex-direction:column; align-items:flex-start; }
+  .proof-stat { padding:0; border-right:none; }
 }
