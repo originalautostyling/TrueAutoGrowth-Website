@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Check Market Availability | Request a Shop Audit | True Auto Growth</title>
-  <meta name="description" content="Apply to work with True Auto Growth. We check your market availability, review your online presence, and give you honest feedback on where we would start. One qualifying shop per protected area."/>
+  <meta name="description" content="Check your market availability with True Auto Growth. We review your market, review your online presence, and give you honest feedback on where we would start. One qualifying shop per protected area."/>
   <link rel="canonical" href="https://trueautogrowth.com/contact"/>
   <meta property="og:title" content="Check Market Availability | True Auto Growth"/>
   <meta property="og:url" content="https://trueautogrowth.com/contact"/>
@@ -92,45 +92,43 @@
         <div class="card" style="padding:clamp(24px,3.5vw,40px);">
           <h3 style="margin-bottom:6px;">Market Availability Application</h3>
           <p style="font-size:13px;color:var(--t50);margin-bottom:22px;">We review every submission and respond within 1 to 2 business days.</p>
-          <!-- Replace with Tally embed: <div class="tally-wrap"><iframe src="YOUR_TALLY_URL" style="min-height:700px;"></iframe></div> -->
-          <div class="form-row">
-            <div class="form-group"><label>First Name</label><input type="text" placeholder="John"/></div>
-            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Smith"/></div>
+          <!-- TALLY FORM EMBED
+               1. Build your intake form at https://tally.so (fields: name, shop, email, phone, city/state, services, situation, message).
+               2. In Tally, set the form theme to dark + transparent background so it matches this site.
+               3. Copy your form ID (the code after tally.so/r/ in the share link, e.g. "wAbCdE").
+               4. Replace TALLY_FORM_ID below (appears once) with that code, then redeploy.
+               Until the ID is added, visitors see the email fallback instead of a broken frame. -->
+          <div class="tally-wrap" id="tallyWrap">
+            <iframe id="tallyFrame"
+                    data-tally-src="https://tally.so/embed/TALLY_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                    loading="lazy" width="100%" height="620" frameborder="0" marginheight="0" marginwidth="0"
+                    title="Market Availability Application"></iframe>
           </div>
-          <div class="form-group"><label>Shop Name</label><input type="text" placeholder="Elite PPF and Ceramic Studio"/></div>
-          <div class="form-group"><label>Email</label><input type="email" placeholder="john@yourshop.com"/></div>
-          <div class="form-group"><label>Phone</label><input type="tel" placeholder="(555) 000-0000"/></div>
-          <div class="form-group"><label>City and State</label><input type="text" placeholder="Nashville, TN"/></div>
-          <div class="form-group"><label>Website (if you have one)</label><input type="text" placeholder="https://yourshop.com"/></div>
-          <div class="form-group">
-            <label>Primary Services</label>
-            <select>
-              <option value="" disabled selected>What does your shop offer?</option>
-              <option>Paint Protection Film (PPF)</option>
-              <option>Window Tint</option>
-              <option>Ceramic Coating</option>
-              <option>Vinyl Wrap</option>
-              <option>Auto Detailing</option>
-              <option>Multiple Services</option>
-            </select>
+          <div class="tally-fallback" id="tallyFallback">
+            <p>The application form is being connected. The fastest way to reach us right now is direct email. We respond within 1 to 2 business days.</p>
+            <a class="btn" href="mailto:sales@trueautogrowth.com?subject=Market%20Availability%20Check" style="font-size:13px;">Email sales@trueautogrowth.com</a>
           </div>
-          <div class="form-group">
-            <label>Current Marketing Situation</label>
-            <select>
-              <option value="" disabled selected>Where are you starting from?</option>
-              <option>Word of mouth only, no real marketing</option>
-              <option>Have a website but not getting results</option>
-              <option>Running ads but not seeing consistent returns</option>
-              <option>Want to scale what is already working</option>
-              <option>Not sure where to start</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>What is the main thing holding your shop back right now?</label>
-            <textarea placeholder="Be direct. Not enough leads, leads not converting, no follow-up, hard to stand out from cheaper competition..."></textarea>
-          </div>
-          <button class="btn btn-full" style="font-size:13px;padding:15px;" onclick="handleSubmit(this)">Check Market Availability</button>
-          <p style="font-size:11px;color:var(--t30);text-align:center;margin-top:10px;line-height:1.6;">We review every submission. If your market is open and your shop is a fit, we will be in touch within 1 to 2 business days.</p>
+          <p style="font-size:11px;color:var(--t30);text-align:center;margin-top:14px;line-height:1.6;">We review every submission. If your market is open and your shop is a fit, we will be in touch within 1 to 2 business days.</p>
+          <script>
+          (function () {
+            var frame = document.getElementById('tallyFrame');
+            var wired = frame && frame.dataset.tallySrc.indexOf('TALLY_FORM_ID') === -1;
+            if (!wired) {
+              if (frame) { var w = document.getElementById('tallyWrap'); if (w) w.style.display = 'none'; }
+              var fb = document.getElementById('tallyFallback'); if (fb) fb.style.display = 'block';
+              return;
+            }
+            var d = document, src = "https://tally.so/widgets/embed.js";
+            var load = function () {
+              if (typeof Tally !== 'undefined') { Tally.loadEmbeds(); return; }
+              d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function (e) { e.src = e.dataset.tallySrc; });
+            };
+            if (typeof Tally !== 'undefined') { load(); }
+            else if (d.querySelector('script[src="' + src + '"]') === null) {
+              var s = d.createElement('script'); s.src = src; s.onload = load; s.onerror = load; d.body.appendChild(s);
+            }
+          })();
+          </script>
         </div>
       </div>
     </div>

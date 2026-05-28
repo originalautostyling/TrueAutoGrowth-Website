@@ -122,12 +122,6 @@
     });
   });
 
-  /* ── FORM SUBMIT HANDLER ── */
-  window.handleSubmit = function (btn) {
-    btn.innerHTML = '&#10003;&nbsp;Submitted. We will be in touch within 1 to 2 business days.';
-    btn.style.background = '#0f7a3e';
-    btn.disabled = true;
-  };
 
 })();
 

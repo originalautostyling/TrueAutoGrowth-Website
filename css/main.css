@@ -883,3 +883,10 @@ img { max-width: 100%; height: auto; display: block; }
   .hero-proof span { display: block; width: 100%; }
   .quote-text { font-size: 16px; }
 }
+
+
+/* Tally embed */
+.tally-wrap { width: 100%; }
+.tally-wrap iframe { width: 100%; border: 0; background: transparent; min-height: 560px; }
+.tally-fallback { display: none; text-align: center; padding: 30px 8px 8px; }
+.tally-fallback p { color: var(--t70); font-size: 14px; line-height: 1.7; margin-bottom: 18px; }
