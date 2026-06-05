@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Portal | True Auto Growth</title>
+  <meta name="description" content="The True Auto Growth client portal gives shop owners one clear view of leads, calls, response time, booked jobs, and revenue. Branded reporting for PPF, tint, ceramic, wrap, and detailing clients."/>
+  <link rel="canonical" href="https://trueautogrowth.com/portal"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Client Portal | True Auto Growth"/>
+  <meta property="og:description" content="One clear view of leads, calls, booked jobs, and revenue. Built for serious auto shops."/>
+  <meta property="og:url" content="https://trueautogrowth.com/portal"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="theme-color" content="#0A0B0D"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="True Auto Growth home"><img src="/images/tag-logo.svg" alt="True Auto Growth"/></a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <a href="/services">Growth Systems <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a>
+        <div class="nav-dropdown-menu">
+          <a href="/packages/foundation"><div class="dd-name">Foundation System</div><div class="dd-desc">$15k–30k / mo shops</div></a>
+          <a href="/packages/market-leader"><div class="dd-name">Market Leader System</div><div class="dd-desc">$40k–60k / mo shops</div></a>
+          <a href="/packages/local-dominator"><div class="dd-name">Local Dominator System</div><div class="dd-desc">$75k+ / mo shops</div></a>
+        </div>
+      </div>
+      <a href="/industries">Industries</a>
+      <a href="/portal" class="active">Client Portal</a>
+      <a href="/about">About</a>
+      <a href="/case-studies">Case Studies</a>
+      <a href="/contact" class="btn btn-primary nav-cta">Check Market Availability</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/services">Growth Systems</a>
+  <a href="/packages/foundation" class="sub">Foundation System</a>
+  <a href="/packages/market-leader" class="sub">Market Leader System</a>
+  <a href="/packages/local-dominator" class="sub">Local Dominator System</a>
+  <a href="/industries">Industries</a>
+  <a href="/portal">Client Portal</a>
+  <a href="/about">About</a>
+  <a href="/case-studies">Case Studies</a>
+  <a href="/faq">FAQ</a>
+  <a href="/contact" class="btn btn-primary btn-full">Check Market Availability</a>
+</div>
+
+<!-- PORTAL HERO + LOGIN -->
+<section class="portal-hero">
+  <div class="container">
+    <div class="portal-split">
+      <div class="reveal">
+        <span class="portal-badge">Launching Soon</span>
+        <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem);margin-bottom:22px;">Your shop&rsquo;s numbers, in one clear view.</h1>
+        <p class="lead" style="margin-bottom:26px;">No more wondering what your marketing is doing. The True Auto Growth portal brings every lead, call, booked job, and dollar into one place, under your shop&rsquo;s account. We are putting the finishing touches on it now.</p>
+        <p class="body">When it launches, you will log in right here, see live numbers pulled from your campaigns and lead flow, and always know what is producing real, booked work. Until then, every client gets clear reporting from us directly.</p>
+      </div>
+
+      <!-- LOGIN CARD (front door to white-label dashboard) -->
+      <div class="login-card reveal d2">
+        <img src="/images/tag-logo.svg" alt="True Auto Growth" class="lc-logo"/>
+        <h3>Client Login</h3>
+        <p class="lc-sub">Sign in to your True Auto Growth dashboard.</p>
+        <div class="lc-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@yourshop.com" autocomplete="email"/>
+        </div>
+        <div class="lc-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="••••••••" autocomplete="current-password"/>
+        </div>
+        <div class="lc-row">
+          <label><input type="checkbox"/> Remember me</label>
+          <a href="/contact">Need access?</a>
+        </div>
+        <!-- LOGIN BUTTON: point href to your white-label GHL app URL once configured,
+             e.g. https://app.trueautogrowth.com . Until then it routes to contact. -->
+        <a href="/contact" class="btn btn-primary btn-full btn-lg">Log In to Dashboard</a>
+        <p class="lc-note">The portal is launching shortly. Want to be set up as soon as it is live? <a href="/contact">Get in touch</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT THE PORTAL SHOWS -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:clamp(36px,4vw,52px);">
+      <span class="eyebrow">What You Will See</span>
+      <h2>The numbers shop owners actually care about.</h2>
+      <p class="lead" style="margin-top:20px;">Not vanity metrics. Not clicks and impressions you cannot act on. The path from spend to lead to booked job to revenue, in plain view.</p>
+    </div>
+
+    <!-- Branded dashboard preview (reuses homepage portal styling) -->
+    <div class="portal-panel preview reveal d1">
+      <div class="portal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="pb-title">TAG Client Portal</span><span class="pb-live coming">Preview</span></div>
+      <div class="dash-grid">
+        <div class="dash-card"><div class="dc-label">Leads (30d)</div><div class="dc-val">47</div><div class="dc-sub">Forms + calls, all sources</div></div>
+        <div class="dash-card"><div class="dc-label">Booked Jobs</div><div class="dc-val">19</div><div class="dc-sub">From tracked leads</div></div>
+        <div class="dash-card"><div class="dc-label">Avg Response</div><div class="dc-val">4<span class="u"> min</span></div><div class="dc-sub">First reply to lead</div></div>
+        <div class="dash-card"><div class="dc-label">Cost / Booked Job</div><div class="dc-val">$238</div><div class="dc-sub">Spend &divide; booked</div></div>
+        <div class="dash-card" style="grid-column:span 2;"><div class="dc-label">Leads by Source &middot; 30 days</div>
+          <div class="src-rows">
+            <div class="src-row"><span class="src-name">Google Ads</span><span class="src-track"><span class="src-fill" style="width:100%"></span></span><span class="src-val">15</span></div>
+            <div class="src-row"><span class="src-name">Google Maps</span><span class="src-track"><span class="src-fill" style="width:80%"></span></span><span class="src-val">12</span></div>
+            <div class="src-row"><span class="src-name">Organic</span><span class="src-track"><span class="src-fill" style="width:60%"></span></span><span class="src-val">9</span></div>
+            <div class="src-row"><span class="src-name">Meta Ads</span><span class="src-track"><span class="src-fill" style="width:47%"></span></span><span class="src-val">7</span></div>
+            <div class="src-row"><span class="src-name">Referral</span><span class="src-track"><span class="src-fill" style="width:27%"></span></span><span class="src-val">4</span></div>
+          </div></div>
+        <div class="dash-card" style="grid-column:span 2;"><div class="dc-label">Revenue Tracked</div><div class="dc-val">$61,200</div><div class="dc-sub">Attributed to booked work</div></div>
+      </div>
+    </div>
+    <p class="portal-note reveal">Preview of the portal in development. Figures shown are samples, not client results.</p>
+
+    <div class="portal-feat-grid reveal d2" style="margin-top:clamp(40px,5vw,60px);">
+      <div class="portal-feat"><svg viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7 14l4-4 3 3 4-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><h4>Leads &amp; Calls by Source</h4><p>Every form and phone call traced to where it came from. Organic, paid, Maps, social, and referral, side by side.</p></div>
+      <div class="portal-feat"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><h4>Response Time</h4><p>See how fast leads are getting a real reply. The single biggest factor in whether a high-ticket inquiry books.</p></div>
+      <div class="portal-feat"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><h4>Lead Status &amp; Booked Jobs</h4><p>Track each lead from new to contacted to quoted to booked, so nothing slips through the cracks.</p></div>
+      <div class="portal-feat"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M7 6h7a3 3 0 010 6H8a3 3 0 000 6h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><h4>Cost &amp; Revenue Clarity</h4><p>Cost per lead, per booked job, per sold job, and revenue attributed to the work, updated as it comes in.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section>
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:clamp(36px,4vw,52px);">
+      <span class="eyebrow">How It Works</span>
+      <h2>Built into every system we run.</h2>
+    </div>
+    <div class="ed-list reveal d1">
+      <div class="ed-item"><div class="ed-num">01</div><div><h3>We connect your lead flow</h3><p>Your campaigns, forms, and call tracking feed into one place, so every lead is captured and attributed automatically instead of living in someone&rsquo;s phone or inbox.</p></div></div>
+      <div class="ed-item"><div class="ed-num">02</div><div><h3>You get your own login</h3><p>Your shop gets a private, branded dashboard. You see your numbers and only your numbers, any time you want them.</p></div></div>
+      <div class="ed-item"><div class="ed-num">03</div><div><h3>We review it together</h3><p>The portal is not just a screen. We use it on our calls to show what is producing booked work and where to push next.</p></div></div>
+    </div>
+    <div style="text-align:center;margin-top:clamp(40px,5vw,56px);" class="reveal d2">
+      <a href="/contact" class="btn btn-primary btn-lg">Check Market Availability <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/images/tag-logo.svg" alt="True Auto Growth"/>
+        <p>The market-exclusive growth partner for PPF, tint, ceramic, wrap, and detailing shops across the United States. Built and run by current shop owners. One market partner at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Growth Systems</h4>
+        <a href="/packages/foundation">Foundation System</a>
+        <a href="/packages/market-leader">Market Leader System</a>
+        <a href="/packages/local-dominator">Local Dominator System</a>
+        <a href="/services">Compare Systems</a>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <a href="/industries#ppf">PPF Shops</a>
+        <a href="/industries#tint">Window Tint</a>
+        <a href="/industries#ceramic">Ceramic Coating</a>
+        <a href="/industries#wrap">Vinyl Wrap</a>
+        <a href="/industries#detailing">Auto Detailing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about">About</a>
+        <a href="/portal">Client Portal</a>
+        <a href="/case-studies">Case Studies</a>
+        <a href="/faq">FAQ</a>
+        <a href="/contact">Check Market Availability</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr">2026</span> True Auto Growth. All rights reserved.</p>
+      <div class="fl"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

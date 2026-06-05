@@ -3,221 +3,208 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About True Auto Growth | Built From Both Sides of the Industry</title>
-  <meta name="description" content="True Auto Growth was built by Sean Kennedy (7+ years automotive marketing) and David Hoggatt (11+ years in PPF, tint, ceramic, and detailing). Industry-rooted marketing infrastructure for automotive restyling shops."/>
+  <title>About True Auto Growth | Built From Inside the Shop</title>
+  <meta name="description" content="True Auto Growth was built by a working shop owner and a marketer with seven years inside the protection and detailing industry. Not outsiders selling theory. We know the floor, the buyer, and what brings the right jobs in."/>
   <link rel="canonical" href="https://trueautogrowth.com/about"/>
-  <meta property="og:title" content="About True Auto Growth | Built From Both Sides of the Industry"/>
-  <meta property="og:description" content="7+ years in automotive marketing. 11+ years in the detailing and restyling industry. Built to close the gap between good shops and the marketing they deserve."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="About True Auto Growth | Built From Inside the Shop"/>
+  <meta property="og:description" content="A working shop owner and a specialist marketer who has spent years on protection and detail shops. We know the work because we live it."/>
   <meta property="og:url" content="https://trueautogrowth.com/about"/>
-  <meta property="og:image" content="https://trueautogrowth.com/images/tint-team-install.jpg"/>
+  <meta property="og:image" content="https://trueautogrowth.com/images/corvette-detail-team.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
   <meta name="robots" content="index, follow"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"About True Auto Growth","url":"https://trueautogrowth.com/about","description":"True Auto Growth was built by Sean Kennedy and David Hoggatt. Sean brings 7+ years in automotive marketing. David brings 11+ years in PPF, tint, ceramic, and detailing.","mainEntity":{"@type":"Organization","name":"True Auto Growth","founders":[{"@type":"Person","name":"Sean Kennedy","jobTitle":"Founder, Marketing Strategy"},{"@type":"Person","name":"David Hoggatt","jobTitle":"Founder, Industry Strategy"}]}}</script>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <meta name="theme-color" content="#0A0B0D"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
   <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-  <meta name="theme-color" content="#08090C"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="/css/main.css"/>
 </head>
 <body>
-<nav id="nav">
-  <a href="/" class="nav-logo">
-    <img src="/images/tag-logo.svg" alt="True Auto Growth" width="200" height="50" loading="eager"/>
-  </a>
-  <ul class="nav-links">
-    <li class="nav-dropdown">
-      <a href="/services">Packages</a>
-      <div class="nav-dropdown-menu">
-        <a href="/packages/foundation">Foundation</a>
-        <a href="/packages/market-leader">Market Leader</a>
-        <a href="/packages/local-dominator">Local Dominator</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="True Auto Growth home"><img src="/images/tag-logo.svg" alt="True Auto Growth"/></a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <a href="/services">Growth Systems <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a>
+        <div class="nav-dropdown-menu">
+          <a href="/packages/foundation"><div class="dd-name">Foundation System</div><div class="dd-desc">$15k–30k / mo shops</div></a>
+          <a href="/packages/market-leader"><div class="dd-name">Market Leader System</div><div class="dd-desc">$40k–60k / mo shops</div></a>
+          <a href="/packages/local-dominator"><div class="dd-name">Local Dominator System</div><div class="dd-desc">$75k+ / mo shops</div></a>
+        </div>
       </div>
-    </li>
-    <li><a href="/industries">Industries</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/faq">FAQ</a></li>
-    <li><a href="/contact" class="nav-cta">Check Market Availability</a></li>
-  </ul>
-  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
+      <a href="/industries">Industries</a>
+      <a href="/portal">Client Portal</a>
+      <a href="/about" class="active">About</a>
+      <a href="/case-studies">Case Studies</a>
+      <a href="/contact" class="btn btn-primary nav-cta">Check Market Availability</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
 </nav>
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
-  <a href="/services" onclick="closeMenu()">Packages</a>
-  <a href="/packages/foundation" class="msub" onclick="closeMenu()">Foundation</a>
-  <a href="/packages/market-leader" class="msub" onclick="closeMenu()">Market Leader</a>
-  <a href="/packages/local-dominator" class="msub" onclick="closeMenu()">Local Dominator</a>
-  <a href="/industries" onclick="closeMenu()">Industries</a>
-  <a href="/about" onclick="closeMenu()">About</a>
-  <a href="/faq" onclick="closeMenu()">FAQ</a>
-  <a href="/contact" class="mcta" onclick="closeMenu()">Check Market Availability</a>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/services">Growth Systems</a>
+  <a href="/packages/foundation" class="sub">Foundation System</a>
+  <a href="/packages/market-leader" class="sub">Market Leader System</a>
+  <a href="/packages/local-dominator" class="sub">Local Dominator System</a>
+  <a href="/industries">Industries</a>
+  <a href="/portal">Client Portal</a>
+  <a href="/about">About</a>
+  <a href="/case-studies">Case Studies</a>
+  <a href="/faq">FAQ</a>
+  <a href="/contact" class="btn btn-primary btn-full">Check Market Availability</a>
 </div>
 
-<section class="page-hero">
-  <div class="page-hero-bg" style="background-image:url('/images/tint-team-install.jpg');background-position:center 30%;"></div>
-  <div class="page-hero-inner">
-    <div class="s-label">About True Auto Growth</div>
-    <h1>Built by people who understand<br/>the shop and the strategy.</h1>
-    <p>True Auto Growth brings together 7 years of automotive marketing experience and 11 years of shop-side industry experience to build strategies that actually fit the way this industry works.</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <a href="/contact" class="btn">Check Market Availability</a>
-      <a href="/contact#audit" class="btn-outline">Request a Shop Audit</a>
-    </div>
-  </div>
-</section>
-
-<!-- WHY WE BUILT TAG -->
-<section>
+<!-- HERO -->
+<header class="about-hero">
+  <div class="hero-bg"><img src="/images/ferrari-detail-closeup.jpg" alt="Hands performing precision detailing work on a Ferrari" fetchpriority="high"/></div>
   <div class="container">
-    <div class="grid-2 reveal">
-      <div>
-        <div class="s-label">Why We Built This</div>
-        <h2 class="s-title" style="margin-bottom:20px;">Good shops were getting overlooked because their marketing did not match the quality of their work.</h2>
-        <p class="s-body" style="margin-bottom:16px;">There are a lot of shops in this industry doing genuinely excellent work. Clean installs. Careful prep. Proper education for the customer. Real craftsmanship. But the marketing around those shops often tells a completely different story or no story at all.</p>
-        <p class="s-body" style="margin-bottom:16px;">Shop owners are busy. They are managing jobs, handling customers, doing the actual work. The pipeline, the CRM, the tracking, the reviews, the follow-up, the SEO, the offer structure. These things get neglected because there is not enough time or bandwidth to do them right while also running the operation.</p>
-        <p class="s-body">That is the gap we built TAG to close. Not by selling more ads. By building the infrastructure that connects the quality of your work to the type of customer who is actually looking for it.</p>
-      </div>
-      <div class="proof-img">
-        <img src="/images/founder-ceramic.jpg" alt="True Auto Growth founder applying ceramic coating, illustrating the shop-side experience behind TAG's strategy"/>
-        <div class="proof-accent"></div>
-      </div>
-    </div>
+    <span class="eyebrow reveal">About True Auto Growth</span>
+    <h1 class="reveal d1">We are not outsiders <span class="serif-italic">selling theory</span>.</h1>
+    <p class="lead reveal d2">We get it, because we have lived it. The slow weeks, the customer comparing you to the cheap shop across town, the work you are proud of that somehow is not bringing in enough of the right jobs. True Auto Growth was built by people who know your side of this, not just the marketing side.</p>
+  </div>
+</header>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip" style="padding-block:0;">
+  <div class="container">
+    <div class="trust-cell reveal"><div class="tc-num">10<span class="u">+</span></div><div class="tc-label">Years owning &amp; operating shops</div></div>
+    <div class="trust-cell reveal d1"><div class="tc-num">7<span class="u"> yrs</span></div><div class="tc-label">Marketing protection &amp; detail shops</div></div>
+    <div class="trust-cell reveal d2"><div class="tc-num">1<span class="u"> of 1</span></div><div class="tc-label">One shop per protected market</div></div>
+    <div class="trust-cell reveal d3"><div class="tc-num">5</div><div class="tc-label">Services we know inside out</div></div>
   </div>
 </section>
 
-<!-- MEET THE FOUNDERS -->
+<!-- WHY WE EXIST -->
 <section class="alt">
   <div class="container">
-    <div class="section-heading reveal">
-      <div class="s-label">The Team</div>
-      <h2 class="s-title">Two founders. Two sides of the same industry.</h2>
-    </div>
-
-    <!-- SEAN -->
-    <div class="grid-2 reveal" style="margin-bottom:clamp(48px,6vw,72px);align-items:start;">
-      <div class="founder-card-large">
-        <img src="/images/sean-kennedy-bmw.jpg" alt="Sean Kennedy, True Auto Growth co-founder inspecting a BMW M3 outside Original Auto Styling in Madison Alabama"/>
-        <div class="founder-badge">
-          <div class="founder-name">Sean Kennedy</div>
-          <div class="founder-role">Founder &middot; Marketing Strategy</div>
-        </div>
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Why We Exist</span>
+        <p class="statement" style="margin-top:24px;">We kept seeing great shops hand their growth to people who did not <em>understand the work</em>.</p>
+        <p class="body" style="margin-bottom:14px;">It is the same story almost everywhere we look. A shop doing beautiful work hires a generic agency and gets generic results. Leads that only want the cheapest price. Reports full of numbers that do not really tell you anything. Campaigns put together by someone who has never set foot in a shop and does not understand what you actually sell.</p>
+        <p class="body">That is why we started True Auto Growth. We wanted shops like yours to finally have a partner who gets both sides, the floor and the marketing, so the plan actually fits how your business runs and how your customers really think.</p>
       </div>
-      <div>
-        <div class="badge" style="margin-bottom:16px;">7+ Years in Automotive Marketing</div>
-        <h3 style="font-size:clamp(22px,2.5vw,28px);font-weight:800;color:var(--white);margin-bottom:16px;letter-spacing:-0.02em;">The strategy side.</h3>
-        <p class="s-body" style="margin-bottom:14px;">Sean has spent over 7 years building marketing infrastructure for businesses in the automotive restyling and detailing space. His work spans positioning, paid search, paid social, SEO, landing pages, content, tracking, CRM, and follow-up systems.</p>
-        <p class="s-body" style="margin-bottom:14px;">What separates his approach is understanding that the marketing strategy has to fit the specific buying behavior of someone shopping for PPF, ceramic coating, or a full vinyl wrap. Those buyers do not think the same way as someone booking an oil change. The consideration window is longer, the trust threshold is higher, and the offer structure matters more than most agencies realize.</p>
-        <p class="s-body">Sean handles the marketing side of TAG so the strategy is built around the services, the buyer, and the market rather than a generic campaign template that works the same for every local business regardless of what they do.</p>
-      </div>
-    </div>
-
-    <!-- DAVID -->
-    <div class="grid-2 reveal" style="align-items:start;">
-      <div style="order:2;">
-        <div class="founder-card-large">
-          <img src="/images/david-hoggatt-detail.jpg" alt="David Hoggatt, True Auto Growth co-founder with 11 years in automotive detailing and restyling, cleaning a wheel at Original Auto Styling"/>
-          <div class="founder-badge">
-            <div class="founder-name">David Hoggatt</div>
-            <div class="founder-role">Founder &middot; Industry Strategy</div>
-          </div>
-        </div>
-      </div>
-      <div style="order:1;">
-        <div class="badge" style="margin-bottom:16px;">11+ Years in Automotive Restyling and Detailing</div>
-        <h3 style="font-size:clamp(22px,2.5vw,28px);font-weight:800;color:var(--white);margin-bottom:16px;letter-spacing:-0.02em;">The shop side.</h3>
-        <p class="s-body" style="margin-bottom:14px;">David started in this industry over 11 years ago with a PPF, vinyl wrap, window tint, and ceramic coating business. Over that time he has managed a diverse collection of over 50 vehicles for a local car enthusiast, worked with premium clients, and developed a deep understanding of what separates a high-quality shop from an average one.</p>
-        <p class="s-body" style="margin-bottom:14px;">His experience goes beyond just doing the work. He understands the operational side. He knows how day-to-day shop life creates real blind spots in lead management, follow-up, and client communication. He knows what customers actually ask, what makes them hesitate, and what builds the kind of trust that leads to a booking rather than a second opinion search.</p>
-        <p class="s-body">David keeps TAG's strategy grounded in shop reality. He provides the operational perspective and industry insight that ensures the marketing infrastructure we build actually fits the way these businesses run, not just how they look on paper.</p>
-      </div>
+      <div class="split-media reveal d2"><img src="/images/corvette-detail-team.jpg" alt="Detailers working on a Corvette in the shop bay" style="object-position:center 42%;"/></div>
     </div>
   </div>
 </section>
 
-<!-- WHAT WE BELIEVE -->
+<!-- THE MAKEUP OF TAG -->
 <section>
   <div class="container">
-    <div class="section-heading centered reveal">
-      <div class="s-label">What We Believe</div>
-      <h2 class="s-title">The principles behind how we work.</h2>
+    <div class="section-head reveal" style="margin-bottom:clamp(36px,4vw,52px);">
+      <span class="eyebrow">What We Are Built From</span>
+      <h2>An operator and a marketer, on the same side of the table.</h2>
+      <p class="lead" style="margin-top:20px;">Most agencies only have one half of this. We built TAG on both, on purpose, because that is the difference between a partner who truly gets your shop and one who is just running a template they use for everyone.</p>
     </div>
-    <div class="grid-3 reveal">
-      <div class="belief-card"><div class="belief-num">01</div><h3>Good shops should not compete only on price.</h3><p>If your marketing cannot clearly communicate the difference between a proper install and a discount one, you will always be competing at the bottom. That is a positioning problem, not a quality problem.</p></div>
-      <div class="belief-card"><div class="belief-num">02</div><h3>Foundation before ad spend.</h3><p>Putting more money into ads before your tracking, offer, landing pages, and CRM are solid is expensive and frustrating. We start with the infrastructure.</p></div>
-      <div class="belief-card"><div class="belief-num">03</div><h3>A lead is only valuable if it gets followed up with.</h3><p>The shop that closes high-ticket work is not always the best installer. It is often the one with the best follow-up process. We build that process into the foundation.</p></div>
-      <div class="belief-card"><div class="belief-num">04</div><h3>Organic authority reduces dependency on paid ads.</h3><p>The goal is to build SEO, reviews, and local presence strong enough that your shop is visible without having to pay for every click. Paid ads accelerate. Organic compounds.</p></div>
-      <div class="belief-card"><div class="belief-num">05</div><h3>Growth requires patience and consistent execution.</h3><p>Anyone selling 24 to 48 hour results is not being honest with you. Real growth takes structure, time, and consistent work across multiple channels. We will tell you that upfront.</p></div>
-      <div class="belief-card"><div class="belief-num">06</div><h3>One market. One partner.</h3><p>We do not build a competitive positioning system for your shop and then turn around and offer the same thing to your direct competitor. Protected market exclusivity is how we operate.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- MISSION -->
-<section class="alt">
-  <div class="container reveal">
-    <div style="max-width:840px;margin:0 auto;text-align:center;">
-      <div class="s-label" style="justify-content:center;margin-bottom:16px;">Our Mission</div>
-      <h2 class="s-title" style="margin-bottom:20px;">To help premium PPF, tint, ceramic, wrap, and detailing shops become the obvious choice in their market.</h2>
-      <p class="s-body" style="max-width:680px;margin:0 auto 28px;">Not through shortcuts. Not through guaranteed claims we cannot back up. Through building the foundation, visibility, tracking, and follow-up that makes the quality of your work easier to find, easier to trust, and easier to book.</p>
-      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-        <a href="/contact" class="btn">Check Market Availability</a>
-        <a href="/contact#audit" class="btn-outline">Request a Shop Audit</a>
+    <div class="makeup reveal d1">
+      <div class="makeup-card">
+        <div class="mc-role">The Shop-Floor Side</div>
+        <h3>A real operator&rsquo;s view</h3>
+        <p>David has owned and run shops for over ten years, including others before this one, and he co-owns a working protection and detailing studio today. So this is not someone remembering the business from years ago. He is in it right now, dealing with the same things you are. He knows quality work, quoting, scheduling, and how a serious PPF or ceramic customer really thinks, and that shapes everything we build for you.</p>
+        <span class="mc-tag">10+ years owning &amp; operating shops</span>
+      </div>
+      <div class="makeup-card">
+        <div class="mc-role">The Marketing Side</div>
+        <h3>Built for this industry only</h3>
+        <p>Sean started True Auto Growth after seven years marketing protection studios and detail shops, and nothing else. Not restaurants, not dentists, not random small businesses. That focus means we already know what your customers search for, why some leads book and others disappear, and how to present a premium shop so it stops getting lumped in with the cheap guys. It is marketing built around how shops like yours actually win.</p>
+        <span class="mc-tag">7 years marketing protection &amp; detail shops</span>
       </div>
     </div>
   </div>
 </section>
 
-<div class="cta-section">
-  <div class="cta-bg" style="background-image:url('/images/gtr-wash-front.jpg');"></div>
-  <div class="cta-inner">
-    <div class="s-label" style="justify-content:center;margin-bottom:14px;">Let's talk</div>
-    <h2>Check if your market<br/>is still <span>available.</span></h2>
-    <p>Tell us about your shop. We will be straight with you about whether we are a fit and what we would work on first.</p>
-    <div class="cta-btns">
-      <a href="/contact" class="btn">Check Market Availability</a>
-      <a href="/services" class="btn-outline">See What We Build</a>
+<!-- THE COMBINATION -->
+<section class="alt">
+  <div class="container">
+    <div class="split rev">
+      <div class="split-media reveal"><img src="/images/mclaren-wash.jpg" alt="McLaren being washed at a premium detailing studio"/></div>
+      <div class="reveal d2">
+        <span class="eyebrow">Why It Works</span>
+        <p class="statement" style="margin-top:24px;">When the shop side and the marketing side build it together, nothing gets <em>lost in translation</em>.</p>
+        <p class="body" style="margin-bottom:14px;">You are not handing your business to someone you have to explain ceramic coating to. We already know what your services are worth, who is actually buying them, and how a high-ticket job really gets closed. You should not have to teach your marketing team your own trade.</p>
+        <p class="body">That is TAG in one sentence. Marketing that already speaks your language, so you can stay on the floor doing what you love instead of babysitting an agency that does not get it.</p>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<footer>
-  <div class="footer-top container">
-    <div class="footer-brand">
-      <div class="logo-wrap"><img src="/images/tag-logo.svg" alt="True Auto Growth" width="160" height="40" loading="lazy"/></div>
-      <p>Marketing infrastructure for PPF, tint, ceramic, wrap, and detailing businesses across the United States. Industry-rooted. One qualifying shop per protected market.</p>
+<!-- PRINCIPLES -->
+<section>
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:clamp(36px,4vw,52px);">
+      <span class="eyebrow">How We Work</span>
+      <h2>The standards we hold ourselves to.</h2>
     </div>
-    <div class="footer-col">
-      <h4>Packages</h4>
-      <a href="/packages/foundation">Foundation</a>
-      <a href="/packages/market-leader">Market Leader</a>
-      <a href="/packages/local-dominator">Local Dominator</a>
-    </div>
-    <div class="footer-col">
-      <h4>Industries</h4>
-      <a href="/industries#ppf">PPF Shops</a>
-      <a href="/industries#tint">Window Tint</a>
-      <a href="/industries#ceramic">Ceramic Coating</a>
-      <a href="/industries#wrap">Vinyl Wrap</a>
-      <a href="/industries#detailing">Auto Detailing</a>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <a href="/about">About</a>
-      <a href="/faq">FAQ</a>
-      <a href="/contact">Contact</a>
-      <a href="mailto:sales@trueautogrowth.com" style="color:var(--blue);">sales@trueautogrowth.com</a>
-      <a href="/contact" style="color:var(--blue);margin-top:4px;font-weight:700;">Check Market Availability</a>
+    <div class="pillars reveal d1">
+      <div class="pillar"><span class="pnum">01</span><h3>One Shop Per Market</h3><p>We only take one qualifying shop per protected area. If we are building your growth, you never have to worry about us handing the same playbook to the shop down the road.</p></div>
+      <div class="pillar"><span class="pnum">02</span><h3>Month to Month</h3><p>Retainer only, no long contracts. We would rather keep your business by earning it every month than trap you in something you want out of. If we are not delivering, you are free to go.</p></div>
+      <div class="pillar"><span class="pnum">03</span><h3>Clarity Over Noise</h3><p>No vanity metrics, no reports full of numbers that do not matter. You will always see what came in, what booked, and what actually made you money.</p></div>
+      <div class="pillar"><span class="pnum">04</span><h3>Built For Your Stage</h3><p>We will never force you into a one-size plan. We match the system to what your shop actually needs right now, whether that is a solid foundation or owning your whole market.</p></div>
     </div>
   </div>
-  <div class="footer-bottom container">
-    <p class="footer-copy">&copy; <span id="yr">2026</span> True Auto Growth. All rights reserved.</p>
-    <div class="footer-legal">
-      <a href="/privacy">Privacy Policy</a>
-      <a href="/terms">Terms of Service</a>
+</section>
+
+<!-- CTA -->
+<section class="band">
+  <div class="band-bg"><img src="/images/bmw-m4-exterior.jpg" alt="BMW M4 detailed outside the shop" style="object-position:center 44%;"/></div>
+  <div class="container">
+    <span class="eyebrow center reveal" style="margin-bottom:24px;">One Shop Per Market</span>
+    <h2 class="reveal d1">Want this team in your corner?</h2>
+    <p class="reveal d2">We take one shop per protected market. If yours is open and the fit is right, we would like to build with you.</p>
+    <div class="band-actions reveal d3">
+      <a href="/contact" class="btn btn-primary btn-lg">Check Market Availability <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="/services" class="btn btn-ghost btn-lg">View Growth Systems</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/images/tag-logo.svg" alt="True Auto Growth"/>
+        <p>The market-exclusive growth partner for PPF, tint, ceramic, wrap, and detailing shops across the United States. Built from inside the industry by a shop owner and a specialist marketer. One market partner at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Growth Systems</h4>
+        <a href="/packages/foundation">Foundation System</a>
+        <a href="/packages/market-leader">Market Leader System</a>
+        <a href="/packages/local-dominator">Local Dominator System</a>
+        <a href="/services">Compare Systems</a>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <a href="/industries#ppf">PPF Shops</a>
+        <a href="/industries#tint">Window Tint</a>
+        <a href="/industries#ceramic">Ceramic Coating</a>
+        <a href="/industries#wrap">Vinyl Wrap</a>
+        <a href="/industries#detailing">Auto Detailing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about">About</a>
+        <a href="/portal">Client Portal</a>
+        <a href="/case-studies">Case Studies</a>
+        <a href="/faq">FAQ</a>
+        <a href="/contact">Check Market Availability</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr">2026</span> True Auto Growth. All rights reserved.</p>
+      <div class="fl"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
     </div>
   </div>
 </footer>
+
 <script src="/js/main.js"></script>
 </body>
 </html>
