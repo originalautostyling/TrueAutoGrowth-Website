@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://trueautogrowth.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://trueautogrowth.com/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://trueautogrowth.com/contact</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://trueautogrowth.com/packages/foundation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://trueautogrowth.com/packages/market-leader</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://trueautogrowth.com/packages/local-dominator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://trueautogrowth.com/industries</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://trueautogrowth.com/industries/ppf-shop-marketing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://trueautogrowth.com/industries/ceramic-coating-marketing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://trueautogrowth.com/industries/window-tint-marketing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://trueautogrowth.com/industries/vinyl-wrap-marketing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://trueautogrowth.com/industries/auto-detailing-marketing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://trueautogrowth.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://trueautogrowth.com/portal</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://trueautogrowth.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://trueautogrowth.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://trueautogrowth.com/faq</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://trueautogrowth.com/contact</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://trueautogrowth.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://trueautogrowth.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
